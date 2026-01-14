@@ -104,40 +104,93 @@
 	</section>
 
 	<!-- Process Section -->
-	<section class="process-section" style="background-color: var(--secondary-color); color: white; padding: 5rem 0;">
-		<div class="container text-center">
-			<span class="section-subtitle" style="color: rgba(255,255,255,0.8);"><i class="fas fa-cogs"></i> Notre
-				Processus</span>
-			<h2 class="section-title" style="color: white; margin-bottom: 4rem;">Étapes vers l’espace extérieur de vos
-				rêves</h2>
+	<section class="process-section">
+		<div class="container">
+			<div class="text-center" style="margin-bottom: 4rem;">
+				<span class="section-subtitle process-subtitle"><i class="fas fa-cogs"></i> Notre Processus</span>
+				<h2 class="section-title process-title">Étapes vers l'espace extérieur de vos rêves</h2>
+				<p class="process-description">Un accompagnement sur mesure, de la première rencontre jusqu'à la
+					réalisation finale</p>
+			</div>
 
-			<div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-				<div class="feature-card"
-					style="background: rgba(255,255,255,0.05); color: white; border: 1px solid rgba(255,255,255,0.1); text-align: left;">
-					<div class="feature-icon"
-						style="background: white; color: var(--secondary-color); width: 50px; height: 50px; line-height: 50px; font-weight: bold; font-size: 1.2rem;">
-						1</div>
-					<h3 style="margin-top: 1rem;">Consultation</h3>
-					<p style="color: rgba(255,255,255,0.8);">Nous commençons par une consultation personnalisée pour
-						comprendre votre vision et vos besoins spécifiques.</p>
+			<div class="process-grid">
+				<!-- Step 1 -->
+				<div class="process-card">
+					<div class="process-number">
+						<span>01</span>
+					</div>
+					<div class="process-icon">
+						<i class="fas fa-comments"></i>
+					</div>
+					<h3 class="process-card-title">Consultation</h3>
+					<p class="process-card-text">Nous commençons par une consultation personnalisée pour comprendre
+						votre vision, vos besoins spécifiques et votre budget.</p>
+					<div class="process-features">
+						<div class="process-feature-item">
+							<i class="fas fa-check-circle"></i>
+							<span>Écoute attentive</span>
+						</div>
+						<div class="process-feature-item">
+							<i class="fas fa-check-circle"></i>
+							<span>Analyse du terrain</span>
+						</div>
+					</div>
 				</div>
-				<div class="feature-card"
-					style="background: rgba(255,255,255,0.05); color: white; border: 1px solid rgba(255,255,255,0.1); text-align: left;">
-					<div class="feature-icon"
-						style="background: white; color: var(--secondary-color); width: 50px; height: 50px; line-height: 50px; font-weight: bold; font-size: 1.2rem;">
-						2</div>
-					<h3 style="margin-top: 1rem;">Conception</h3>
-					<p style="color: rgba(255,255,255,0.8);">Nos experts élaborent un plan détaillé avec des pratiques
-						écologiques pour votre approbation avant le début des travaux.</p>
+
+				<!-- Step 2 -->
+				<div class="process-card">
+					<div class="process-number">
+						<span>02</span>
+					</div>
+					<div class="process-icon">
+						<i class="fas fa-pencil-ruler"></i>
+					</div>
+					<h3 class="process-card-title">Conception</h3>
+					<p class="process-card-text">Nos experts élaborent un plan détaillé avec des pratiques écologiques,
+						incluant plans 3D et sélection des végétaux adaptés.</p>
+					<div class="process-features">
+						<div class="process-feature-item">
+							<i class="fas fa-check-circle"></i>
+							<span>Plans détaillés</span>
+						</div>
+						<div class="process-feature-item">
+							<i class="fas fa-check-circle"></i>
+							<span>Devis transparent</span>
+						</div>
+					</div>
 				</div>
-				<div class="feature-card"
-					style="background: rgba(255,255,255,0.05); color: white; border: 1px solid rgba(255,255,255,0.1); text-align: left;">
-					<div class="feature-icon"
-						style="background: white; color: var(--secondary-color); width: 50px; height: 50px; line-height: 50px; font-weight: bold; font-size: 1.2rem;">
-						3</div>
-					<h3 style="margin-top: 1rem;">Réalisation</h3>
-					<p style="color: rgba(255,255,255,0.8);">Nous transformons votre espace avec soin et expertise pour
-						un résultat durable et magnifique.</p>
+
+				<!-- Step 3 -->
+				<div class="process-card">
+					<div class="process-number">
+						<span>03</span>
+					</div>
+					<div class="process-icon">
+						<i class="fas fa-tools"></i>
+					</div>
+					<h3 class="process-card-title">Réalisation</h3>
+					<p class="process-card-text">Nous transformons votre espace avec soin et expertise, en respectant
+						les délais et en assurant un suivi qualité constant.</p>
+					<div class="process-features">
+						<div class="process-feature-item">
+							<i class="fas fa-check-circle"></i>
+							<span>Travail soigné</span>
+						</div>
+						<div class="process-feature-item">
+							<i class="fas fa-check-circle"></i>
+							<span>Garantie qualité</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Process Timeline -->
+			<div class="process-timeline">
+				<div class="timeline-line"></div>
+				<div class="timeline-dots">
+					<div class="timeline-dot"></div>
+					<div class="timeline-dot"></div>
+					<div class="timeline-dot"></div>
 				</div>
 			</div>
 		</div>
@@ -220,7 +273,7 @@
 	</footer>
 
 	<script>
-		// Simple Mobile Menu Toggle
+		// Mobile Menu Toggle
 		document.querySelector('.mobile-menu-toggle').addEventListener('click', function () {
 			const nav = document.querySelector('.nav-menu');
 			nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
@@ -230,10 +283,37 @@
 				nav.style.top = '100%';
 				nav.style.left = '0';
 				nav.style.right = '0';
-				nav.style.backgroundColor = '#fff';
+				nav.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
 				nav.style.padding = '1rem';
 				nav.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+				nav.style.backdropFilter = 'blur(10px)';
 			}
+		});
+
+		// Add fade-in animation on scroll
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const observer = new IntersectionObserver(function (entries) {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.style.opacity = '1';
+					entry.target.style.transform = 'translateY(0)';
+				}
+			});
+		}, observerOptions);
+
+		// Observe all sections
+		document.addEventListener('DOMContentLoaded', function () {
+			const sections = document.querySelectorAll('.about-section, .stats-section, .process-section, .mission-section, .cta');
+			sections.forEach(section => {
+				section.style.opacity = '0';
+				section.style.transform = 'translateY(30px)';
+				section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+				observer.observe(section);
+			});
 		});
 	</script>
 </body>

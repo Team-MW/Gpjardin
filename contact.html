@@ -179,7 +179,7 @@
 	</footer>
 
 	<script>
-		// Simple Mobile Menu Toggle
+		// Mobile Menu Toggle
 		document.querySelector('.mobile-menu-toggle').addEventListener('click', function () {
 			const nav = document.querySelector('.nav-menu');
 			nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
@@ -189,10 +189,37 @@
 				nav.style.top = '100%';
 				nav.style.left = '0';
 				nav.style.right = '0';
-				nav.style.backgroundColor = '#fff';
+				nav.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
 				nav.style.padding = '1rem';
 				nav.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+				nav.style.backdropFilter = 'blur(10px)';
 			}
+		});
+
+		// Add fade-in animation on scroll
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const observer = new IntersectionObserver(function (entries) {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.style.opacity = '1';
+					entry.target.style.transform = 'translateY(0)';
+				}
+			});
+		}, observerOptions);
+
+		// Observe all sections
+		document.addEventListener('DOMContentLoaded', function () {
+			const sections = document.querySelectorAll('.contact-section');
+			sections.forEach(section => {
+				section.style.opacity = '0';
+				section.style.transform = 'translateY(30px)';
+				section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+				observer.observe(section);
+			});
 		});
 	</script>
 </body>
