@@ -107,9 +107,9 @@ const Footer = () => {
                         <p>&copy; {new Date().getFullYear()} GP JARDIN. Tous droits réservés.</p>
                     </div>
                     <div className="footer-legal">
-                        <Link to="/contact">Mentions Légales</Link>
+                        <Link to="/mentions-legales">Mentions Légales</Link>
                         <span className="separator">•</span>
-                        <Link to="/contact">Confidentialité</Link>
+                        <Link to="/confidentialite">Confidentialité</Link>
                     </div>
                     <div className="footer-credits">
                         <p>
