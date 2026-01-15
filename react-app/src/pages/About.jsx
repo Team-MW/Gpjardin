@@ -4,7 +4,7 @@ const About = () => {
     return (
         <>
             {/* Page Header */}
-            <section className="page-header" style={{ backgroundImage: "url('https://gpjardin.microdidact.com/wp-content/uploads/2025/03/about-1.jpg')" }}>
+            <section className="page-header" style={{ backgroundImage: "url('/aproposdenous.jpg')" }}>
                 <div className="container">
                     <h1 className="page-title">Notre Histoire</h1>
                     <p className="page-breadcrumb">

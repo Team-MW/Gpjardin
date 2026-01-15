@@ -42,7 +42,7 @@ const Services = () => {
 
     return (
         <>
-            <section className="page-header" style={{ backgroundImage: "url('https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services-header.jpg')" }}>
+            <section className="page-header" style={{ backgroundImage: "url('/nosservice.jpg')" }}>
                 <div className="container">
                     <h1 className="page-title">Nos Services</h1>
                     <p className="page-breadcrumb">

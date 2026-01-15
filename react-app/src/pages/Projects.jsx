@@ -57,7 +57,7 @@ const Projects = () => {
 
     return (
         <>
-            <section className="page-header" style={{ backgroundImage: "url('https://gpjardin.microdidact.com/wp-content/uploads/2025/03/projects-header.jpg')" }}>
+            <section className="page-header" style={{ backgroundImage: "url('/nos-projets.jpg')" }}>
                 <div className="container">
                     <h1 className="page-title">Nos Réalisations</h1>
                     <p className="page-breadcrumb">

@@ -30,7 +30,6 @@ const Home = () => {
             {/* Hero Section */}
             <section className="hero">
                 <div className="container hero-content">
-                    <span className="hero-subtitle">Expert Paysagiste à Toulouse</span>
                     <h1 className="hero-title">
                         Votre jardin,<br />
                         <span className="text-gradient">Notre Chef-d'œuvre</span>
@@ -58,42 +57,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Features Section - Glassmorphism Cards */}
-            <section className="features reveal">
-                <div className="container">
-                    <div className="features-grid">
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-certificate"></i>
-                            </div>
-                            <h3 className="feature-title">Expertise Certifiée</h3>
-                            <p style={{ color: 'var(--text-light)' }}>
-                                Une équipe de professionnels qualifiés avec plus de 15 ans d'expérience.
-                            </p>
-                        </div>
 
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-leaf"></i>
-                            </div>
-                            <h3 className="feature-title">Approche Écologique</h3>
-                            <p style={{ color: 'var(--text-light)' }}>
-                                Des méthodes respectueuses de l'environnement pour un jardin durable.
-                            </p>
-                        </div>
-
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <i className="fas fa-hand-holding-heart"></i>
-                            </div>
-                            <h3 className="feature-title">Service Sur Mesure</h3>
-                            <p style={{ color: 'var(--text-light)' }}>
-                                Des solutions personnalisées adaptées à vos envies et votre budget.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* About Section - Modern Layout */}
             <section className="section-padding reveal">
