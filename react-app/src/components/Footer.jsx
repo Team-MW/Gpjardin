@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-top">
                     <div className="footer-grid">
-                        {/* Branding */}
+                        {/*   ddBranding */}
                         <div className="footer-col branding-col">
                             <Link to="/" className="footer-logo-link">
                                 <img
