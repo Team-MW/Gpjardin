@@ -79,7 +79,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-                                {/* Address Card */}
+                                {/* Address C.  ard */}
                                 <div className="info-card" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', padding: '1.5rem', background: 'var(--white)', borderRadius: '16px', boxShadow: 'var(--shadow-sm)', transition: 'transform 0.3s ease' }}>
                                     <div style={{ width: '60px', height: '60px', background: 'var(--accent-color)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary-color)', fontSize: '1.5rem', flexShrink: 0 }}>
                                         <i className="fas fa-map-marker-alt"></i>
