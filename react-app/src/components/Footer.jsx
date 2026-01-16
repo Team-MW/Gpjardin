@@ -21,14 +21,38 @@ const Footer = () => {
                                 alliant esthétisme et durabilité.
                             </p>
                             <div className="footer-social">
-                                <a href="#" className="social-link" aria-label="Facebook">
-                                    <i className="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" className="social-link" aria-label="Instagram">
-                                    <i className="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" className="social-link" aria-label="LinkedIn">
-                                    <i className="fab fa-linkedin-in"></i>
+                                <a
+                                    href="https://www.instagram.com/gp.jardin31/?igsh=MzNscnd4dmMxaTI4"
+                                    className="social-link instagram-btn"
+                                    aria-label="Instagram"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
+                                        color: 'white',
+                                        border: 'none',
+                                        width: 'auto',
+                                        padding: '0.8rem 1.5rem',
+                                        borderRadius: '50px',
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: '10px',
+                                        textDecoration: 'none',
+                                        fontWeight: '600',
+                                        boxShadow: '0 10px 20px -5px rgba(220, 39, 67, 0.5)',
+                                        transition: 'all 0.3s ease'
+                                    }}
+                                    onMouseOver={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-3px)';
+                                        e.currentTarget.style.boxShadow = '0 15px 30px -5px rgba(220, 39, 67, 0.7)';
+                                    }}
+                                    onMouseOut={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = '0 10px 20px -5px rgba(220, 39, 67, 0.5)';
+                                    }}
+                                >
+                                    <i className="fab fa-instagram" style={{ fontSize: '1.4rem' }}></i>
+                                    <span>Suivez-nous sur Insta</span>
                                 </a>
                             </div>
                         </div>
@@ -77,7 +101,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        {/* Contact */}
+                        {/* Contact & Horaires */}
                         <div className="footer-col contact-col">
                             <h4 className="footer-heading">Nous Contacter</h4>
                             <ul className="footer-links footer-contact">
@@ -93,9 +117,17 @@ const Footer = () => {
                                     <i className="fas fa-envelope"></i>
                                     <a href="mailto:contact@gpjardin.com">contact@gpjardin.com</a>
                                 </li>
-                                <li>
-                                    <i className="fas fa-clock"></i>
-                                    <span>Lun - Ven : 8h00 - 18h00</span>
+                            </ul>
+
+                            <h4 className="footer-heading" style={{ marginTop: '2rem', marginBottom: '1rem' }}>Horaires</h4>
+                            <ul className="footer-links" style={{ fontSize: '0.9rem', color: '#94a3b8' }}>
+                                <li style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                                    <span>Lundi - Vendredi:</span>
+                                    <span style={{ color: 'white' }}>08:00 – 19:00</span>
+                                </li>
+                                <li style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <span>Samedi - Dimanche:</span>
+                                    <span style={{ color: '#ef4444' }}>Fermé</span>
                                 </li>
                             </ul>
                         </div>

@@ -1,4 +1,67 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
+
+const StatItem = ({ end, suffix, label, icon }) => {
+    const [count, setCount] = useState(0);
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isVisible) return;
+
+        let startTime;
+        const duration = 2000; // 2 seconds
+
+        const animate = (timestamp) => {
+            if (!startTime) startTime = timestamp;
+            const progress = timestamp - startTime;
+
+            if (progress < duration) {
+                // Ease out quart function for smooth effect
+                const easeOutQuart = 1 - Math.pow(1 - progress / duration, 4);
+                setCount(Math.floor(easeOutQuart * end));
+                requestAnimationFrame(animate);
+            } else {
+                setCount(end);
+            }
+        };
+
+        requestAnimationFrame(animate);
+    }, [isVisible, end]);
+
+    return (
+        <div ref={ref} style={{ textAlign: 'center', padding: '2rem', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', backdropFilter: 'blur(5px)', border: '1px solid rgba(255,255,255,0.1)', transition: 'transform 0.3s' }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-10px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+            <div style={{ fontSize: '2rem', color: 'rgba(255,255,255,0.2)', marginBottom: '1rem' }}>
+                <i className={`fas ${icon}`}></i>
+            </div>
+            <div style={{ fontSize: '3.5rem', fontWeight: '800', color: 'var(--primary-color)', marginBottom: '0.5rem', lineHeight: 1 }}>
+                {count}{suffix}
+            </div>
+            <div style={{ fontSize: '1.1rem', fontWeight: '500', letterSpacing: '1px', textTransform: 'uppercase', opacity: 0.8 }}>{label}</div>
+        </div>
+    );
+};
 
 const About = () => {
     return (
@@ -56,25 +119,19 @@ const About = () => {
             </section>
 
             {/* Stats Section */}
-            <section className="section-padding" style={{ background: 'var(--secondary-color)', color: 'var(--white)' }}>
-                <div className="container">
-                    <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
-                        <div style={{ textAlign: 'center' }}>
-                            <div style={{ fontSize: '3.5rem', fontWeight: '700', color: 'var(--primary-color)', marginBottom: '0.5rem' }}>25+</div>
-                            <div>Années d'expérience</div>
-                        </div>
-                        <div style={{ textAlign: 'center' }}>
-                            <div style={{ fontSize: '3.5rem', fontWeight: '700', color: 'var(--primary-color)', marginBottom: '0.5rem' }}>500+</div>
-                            <div>Jardins Créés</div>
-                        </div>
-                        <div style={{ textAlign: 'center' }}>
-                            <div style={{ fontSize: '3.5rem', fontWeight: '700', color: 'var(--primary-color)', marginBottom: '0.5rem' }}>100%</div>
-                            <div>Clients Satisfaits</div>
-                        </div>
-                        <div style={{ textAlign: 'center' }}>
-                            <div style={{ fontSize: '3.5rem', fontWeight: '700', color: 'var(--primary-color)', marginBottom: '0.5rem' }}>10+</div>
-                            <div>Prix de Design</div>
-                        </div>
+            {/* Stats Section Animated */}
+            <section className="section-padding" style={{ background: 'var(--secondary-color)', color: 'var(--white)', position: 'relative', overflow: 'hidden' }}>
+                {/* Background elements */}
+                <div style={{ position: 'absolute', top: '-50%', left: '-20%', width: '80%', height: '200%', background: 'radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%)', transform: 'rotate(15deg)' }}></div>
+
+                <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+                    <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '3rem' }}>
+
+                        <StatItem end={25} suffix="+" label="Années d'expérience" icon="fa-hourglass-half" />
+                        <StatItem end={500} suffix="+" label="Jardins Créés" icon="fa-tree" />
+                        <StatItem end={100} suffix="%" label="Clients Satisfaits" icon="fa-smile" />
+                        <StatItem end={10} suffix="+" label="Prix de Design" icon="fa-trophy" />
+
                     </div>
                 </div>
             </section>
