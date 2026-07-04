@@ -1,27 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-    });
+    const formRef = useRef(null);
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form submitted:', formData);
-        alert('Merci pour votre message ! Nous vous contacterons bientôt.');
-        setFormData({ name: '', email: '', phone: '', message: '' });
-    };
+    useEffect(() => {
+        if (formRef.current && formRef.current.children.length === 0) {
+            const script = document.createElement('script');
+            script.src = 'https://form.jotform.com/jsform/261845357668371';
+            script.type = 'text/javascript';
+            script.async = true;
+            formRef.current.appendChild(script);
+        }
+    }, []);
 
     return (
         <>
@@ -105,72 +96,8 @@ const Contact = () => {
                         </div>
 
                         {/* Form Column */}
-                        <div className="contact-form-wrapper" style={{ background: 'var(--white)', padding: '3rem', borderRadius: '24px', boxShadow: 'var(--shadow-lg)', position: 'relative', overflow: 'hidden' }}>
-                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '6px', background: 'var(--primary-gradient)' }}></div>
-                            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.75rem', marginBottom: '2rem', color: 'var(--secondary-color)' }}>
-                                Envoyez-nous un message
-                            </h3>
-
-                            <form onSubmit={handleSubmit}>
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '1.5rem' }}>
-                                    <div className="form-group" style={{ marginBottom: 0 }}>
-                                        <label htmlFor="name" style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '0.5rem', display: 'block' }}>Nom complet *</label>
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                            required
-                                            placeholder="Jean Dupont"
-                                            style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '1rem', outline: 'none', transition: 'border-color 0.3s' }}
-                                        />
-                                    </div>
-                                    <div className="form-group" style={{ marginBottom: 0 }}>
-                                        <label htmlFor="phone" style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '0.5rem', display: 'block' }}>Téléphone</label>
-                                        <input
-                                            type="tel"
-                                            id="phone"
-                                            name="phone"
-                                            value={formData.phone}
-                                            onChange={handleChange}
-                                            placeholder="06 ..."
-                                            style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '1rem', outline: 'none', transition: 'border-color 0.3s' }}
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="form-group" style={{ marginBottom: '1.5rem' }}>
-                                    <label htmlFor="email" style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '0.5rem', display: 'block' }}>Email *</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        required
-                                        placeholder="jean.dupont@email.com"
-                                        style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '1rem', outline: 'none', transition: 'border-color 0.3s' }}
-                                    />
-                                </div>
-
-                                <div className="form-group" style={{ marginBottom: '2rem' }}>
-                                    <label htmlFor="message" style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '0.5rem', display: 'block' }}>Comment pouvons-nous vous aider ? *</label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        required
-                                        placeholder="Décrivez votre projet..."
-                                        style={{ width: '100%', padding: '1rem', borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '1rem', minHeight: '150px', outline: 'none', resize: 'vertical' }}
-                                    ></textarea>
-                                </div>
-
-                                <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '1.2rem', fontSize: '1.1rem' }}>
-                                    Envoyer ma demande <i className="fas fa-paper-plane" style={{ marginLeft: '10px' }}></i>
-                                </button>
-                            </form>
+                        <div className="contact-form-wrapper" style={{ position: 'relative', overflow: 'hidden' }}>
+                            <div ref={formRef} style={{ width: '100%' }}></div>
                         </div>
 
                     </div>
