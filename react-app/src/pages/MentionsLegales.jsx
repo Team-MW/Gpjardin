@@ -20,7 +20,7 @@ const MentionsLegales = () => {
                             Le site internet <strong>gpjardin.com</strong> est édité par l'entreprise <strong>GP JARDIN</strong>.<br />
                             <strong>Siège social :</strong> Toulouse, France<br />
                             <strong>Téléphone :</strong> 06 66 70 30 45<br />
-                            <strong>Email :</strong> contact@gpjardin.com<br />
+                            <strong>Email :</strong> Gp.jardin31@gmail.com<br />
                             <strong>Responsable de la publication :</strong> GP JARDIN
                         </p>
 

@@ -111,7 +111,7 @@ const Home = () => {
                             <span className="section-tag">Votre Paysagiste à Toulouse</span>
                             <h2 className="section-title">Créateurs d'espaces verts d'exception en Haute-Garonne</h2>
                             <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-                                Depuis 2005, <strong>GP JARDIN</strong> met sa passion et son expertise au service des particuliers et professionnels de la région toulousaine. Plus qu'une simple entreprise de jardinage, nous sommes des architectes de la nature.
+                                Depuis 5 ans, <strong>GP JARDIN</strong> met sa passion et son expertise au service des particuliers et professionnels de la région toulousaine. Plus qu'une simple entreprise de jardinage, nous sommes des architectes de la nature.
                             </p>
                             <p style={{ fontSize: '1rem', color: 'var(--text-light)', marginBottom: '2rem', lineHeight: '1.8' }}>
                                 Que vous rêviez d'un <em>jardin zen</em>, d'une <em>terrasse en bois exotique</em> ou d'un <em>espace végétalisé nécessitant peu d'entretien</em>, notre bureau d'étude conçoit des projets sur-mesure qui valorisent votre patrimoine immobilier. Nous intervenons à Toulouse, Blagnac, Colomiers, Balma et dans toute l'agglomération pour la création et l'entretien de vos extérieurs.
@@ -119,7 +119,7 @@ const Home = () => {
 
                             <div className="stats-wrapper">
                                 <div className="stat-box">
-                                    <div className="stat-number">25+</div>
+                                    <div className="stat-number">5</div>
                                     <div>
                                         <h4 style={{ fontWeight: 700, color: 'var(--secondary-color)' }}>Années d'expérience</h4>
                                         <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>Savoir-faire artisanal</p>
@@ -164,7 +164,7 @@ const Home = () => {
                             </div>
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)' }}>Consultation</h3>
                             <p style={{ color: '#cbd5e1', lineHeight: '1.7' }}>
-                                Nous vous rencontrons chez vous pour capter l'essence de votre projet. Écoute de vos envies, analyse du terrain et premiers conseils d'experts.
+                                Nous nous rencontrons chez vous pour comprendre vos besoins, analyser votre terrain et discuter de vos envies.
                             </p>
                         </div>
 
@@ -172,11 +172,11 @@ const Home = () => {
                         <div style={{ background: '#1e293b', padding: '2.5rem', borderRadius: '24px', position: 'relative', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
                             <div style={{ position: 'absolute', top: '-20px', right: '-20px', fontSize: '8rem', fontWeight: '800', color: 'white', opacity: '0.03' }}>2</div>
                             <div style={{ width: '60px', height: '60px', background: 'linear-gradient(135deg, #38bdf8, #0ea5e9)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', color: '#0c4a6e', marginBottom: '1.5rem', boxShadow: '0 10px 20px -5px rgba(56, 189, 248, 0.4)' }}>
-                                <i className="fas fa-pencil-ruler"></i>
+                                <i className="fas fa-file-invoice-dollar"></i>
                             </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)' }}>Conception</h3>
+                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)' }}>Devis</h3>
                             <p style={{ color: '#cbd5e1', lineHeight: '1.7' }}>
-                                Création des plans, choix des matériaux et des végétaux. Nous affinons ensemble le projet jusqu'à ce qu'il corresponde parfaitement à votre vision.
+                                À la suite de notre échange, nous vous proposons une étude personnalisée et un devis transparent, adapté à votre projet.
                             </p>
                         </div>
 
@@ -188,9 +188,9 @@ const Home = () => {
                                     <i className="fas fa-tools"></i>
                                 </div>
                                 <div style={{ flex: 1 }}>
-                                    <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)' }}>Réalisation & Suivi</h3>
+                                    <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)' }}>Réalisation</h3>
                                     <p style={{ color: '#cbd5e1', lineHeight: '1.7', fontSize: '1.1rem', maxWidth: '800px' }}>
-                                        Nos équipes qualifiées prennent le relais pour donner vie au projet. Travail soigné, respect des délais et chantier propre. Une fois terminé, nous restons à vos côtés pour l'entretien et l'évolution de votre jardin.
+                                        Notre équipe technique réalise les travaux avec soin, en respectant les délais et votre propriété. Nous donnons vie à votre extérieur avec professionnalisme.
                                     </p>
                                 </div>
                             </div>
@@ -264,6 +264,35 @@ const Home = () => {
                         <Link to="/services" className="btn btn-outline" style={{ borderColor: 'var(--primary-color)', color: 'var(--primary-color)' }}>
                             Voir tous nos services
                         </Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* Trusted By / Syndicates Section */}
+            <section className="section-padding reveal" style={{ background: 'white' }}>
+                <div className="container" style={{ textAlign: 'center' }}>
+                    <div className="section-title-wrapper" style={{ marginBottom: '4rem' }}>
+                        <span className="section-tag">Partenaires de confiance</span>
+                        <h2 className="section-title" style={{ fontSize: '2.2rem' }}>Syndicats et copropriétés qui nous font confiance</h2>
+                    </div>
+
+                    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '4rem' }}>
+                        
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+                            <img src="/Unknown.png" alt="Adhetec Solutions" style={{ maxHeight: '80px', filter: 'grayscale(100%)', opacity: 0.7, transition: 'all 0.3s', objectFit: 'contain' }} onMouseOver={(e) => { e.currentTarget.style.filter = 'none'; e.currentTarget.style.opacity = '1'; }} onMouseOut={(e) => { e.currentTarget.style.filter = 'grayscale(100%)'; e.currentTarget.style.opacity = '0.7'; }} />
+                            <span style={{ fontWeight: '600', color: '#64748b' }}>Adhetec Solutions à Colomiers</span>
+                        </div>
+
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+                            <img src="/si.jpg" alt="Service à la personne" style={{ maxHeight: '80px', filter: 'grayscale(100%)', opacity: 0.7, transition: 'all 0.3s', objectFit: 'contain' }} onMouseOver={(e) => { e.currentTarget.style.filter = 'none'; e.currentTarget.style.opacity = '1'; }} onMouseOut={(e) => { e.currentTarget.style.filter = 'grayscale(100%)'; e.currentTarget.style.opacity = '0.7'; }} />
+                            <span style={{ fontWeight: '600', color: '#64748b' }}>Service à la personne</span>
+                        </div>
+
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+                            <img src="/logo7D--en-transparence.png" alt="7D Immobilier" style={{ maxHeight: '80px', filter: 'grayscale(100%)', opacity: 0.7, transition: 'all 0.3s', objectFit: 'contain' }} onMouseOver={(e) => { e.currentTarget.style.filter = 'none'; e.currentTarget.style.opacity = '1'; }} onMouseOut={(e) => { e.currentTarget.style.filter = 'grayscale(100%)'; e.currentTarget.style.opacity = '0.7'; }} />
+                            <span style={{ fontWeight: '600', color: '#64748b' }}>7D Immobilier</span>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -379,127 +408,86 @@ const Home = () => {
             </section>
 
             {/* Zone d'Intervention Section */}
-            <section className="section-padding reveal" style={{ background: '#f8fafc' }}>
+            <section className="section-padding reveal" style={{ background: '#f8fafc', padding: '6rem 0' }}>
+                <div className="container" style={{ textAlign: 'center' }}>
+                    <div style={{ marginBottom: '3rem' }}>
+                        <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', fontSize: '2rem', color: '#1a1a1a', textTransform: 'none', fontStyle: 'normal' }}>
+                            <i className="fas fa-map-marker-alt" style={{ color: 'var(--primary-color)' }}></i> Zones d'Intervention
+                        </h2>
+                        <p style={{ marginTop: '1rem', color: '#666', fontSize: '1.1rem' }}>
+                            Nous intervenons rapidement sur Toulouse et toute sa périphérie :
+                        </p>
+                    </div>
+                    
+                    <div className="cities-pills-container">
+                        {[
+                            { name: "Toulouse", id: "toulouse" }, { name: "Blagnac", id: "blagnac" },
+                            { name: "Colomiers", id: "colomiers" }, { name: "Tournefeuille", id: "tournefeuille" },
+                            { name: "Plaisance-du-Touch", id: "plaisance-du-touch" }, { name: "Cugnaux", id: "cugnaux" },
+                            { name: "Muret", id: "muret" }, { name: "Portet-sur-Garonne", id: "portet-sur-garonne" },
+                            { name: "Pibrac", id: "pibrac" }, { name: "Cornebarrieu", id: "cornebarrieu" },
+                            { name: "Mondonville", id: "mondonville" }, { name: "Seilh", id: "seilh" },
+                            { name: "Aussonne", id: "aussonne" }, { name: "Beauzelle", id: "beauzelle" },
+                            { name: "Fenouillet", id: "fenouillet" }, { name: "Gagnac-sur-Garonne", id: "gagnac-sur-garonne" },
+                            { name: "Lespinasse", id: "lespinasse" }, { name: "Saint-Alban", id: "saint-alban" },
+                            { name: "Fonbeauzard", id: "fonbeauzard" }, { name: "Castelginest", id: "castelginest" },
+                            { name: "Aucamville", id: "aucamville" }, { name: "Launaguet", id: "launaguet" },
+                            { name: "Léguevin", id: "leguevin" }, { name: "Brax", id: "brax" },
+                            { name: "La Salvetat-St-G.", id: "la-salvetat-saint-gilles" }, { name: "Villeneuve-T.", id: "villeneuve-tolosane" },
+                            { name: "Frouzins", id: "frouzins" }, { name: "Seysses", id: "seysses" },
+                            { name: "Fonsorbes", id: "fonsorbes" }, { name: "Saint-Lys", id: "saint-lys" },
+                            { name: "Grenade", id: "grenade" }, { name: "Merville", id: "merville" }
+                        ].map((city, index) => (
+                            <Link key={index} to={`/secteur/${city.id}`} className="city-pill">
+                                {city.name}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* SEO Section / Expertises */}
+            <section className="section-padding" style={{ background: 'white' }}>
                 <div className="container">
-                    <div className="section-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+                    <div className="section-title-wrapper" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                        <span className="section-tag">Notre Savoir-Faire</span>
+                        <h2 className="section-title" style={{ fontSize: '2.2rem' }}>Toutes nos prestations d'aménagement et d'entretien</h2>
+                    </div>
 
-                        {/* Content Side */}
-                        <div>
-                            <span className="section-tag">Rayon d'action</span>
-                            <h2 className="section-title">Nous intervenons chez vous</h2>
-                            <p style={{ color: 'var(--text-light)', marginBottom: '2rem', fontSize: '1.1rem' }}>
-                                Basés au cœur de Toulouse, nous nous déplaçons dans toute l'agglomération et le département pour donner vie à vos projets d'aménagements extérieurs.
-                            </p>
-
-                            <ul style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
-                                <li style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                                    <div style={{ width: '40px', height: '40px', background: '#ecfccb', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#65a30d' }}>
-                                        <i className="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div>
-                                        <h4 style={{ margin: 0, fontSize: '1rem', fontWeight: '700' }}>Toulouse Métropole</h4>
-                                        <span style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Intervention rapide & estimation gratuite</span>
-                                    </div>
-                                </li>
-                                <li style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                                    <div style={{ width: '40px', height: '40px', background: '#e0f2fe', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0284c7' }}>
-                                        <i className="fas fa-city"></i>
-                                    </div>
-                                    <div>
-                                        <h4 style={{ margin: 0, fontSize: '1rem', fontWeight: '700' }}>Périphérie (30km)</h4>
-                                        <span style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Blagnac, Colomiers, Balma, L'Union, Tournefeuille...</span>
-                                    </div>
-                                </li>
-                                <li style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                                    <div style={{ width: '40px', height: '40px', background: '#fef3c7', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d97706' }}>
-                                        <i className="fas fa-car-side"></i>
-                                    </div>
-                                    <div>
-                                        <h4 style={{ margin: 0, fontSize: '1rem', fontWeight: '700' }}>Haute-Garonne & Occitanie</h4>
-                                        <span style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Déplacement sur devis selon l'ampleur du projet</span>
-                                    </div>
-                                </li>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem', marginBottom: '3rem' }}>
+                        <div style={{ background: '#f8fafc', padding: '2.5rem', borderRadius: '24px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+                            <h3 style={{ fontSize: '1.4rem', marginBottom: '1.5rem', color: '#0f172a', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                <div style={{ width: '40px', height: '40px', background: '#dcfce7', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#166534' }}><i className="fas fa-leaf"></i></div>
+                                Détails de nos interventions
+                            </h3>
+                            <ul style={{ listStyleType: 'none', padding: 0, margin: 0, color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '1.2rem', fontSize: '1.05rem', lineHeight: '1.6' }}>
+                                <li style={{ display: 'flex', gap: '15px' }}><i className="fas fa-check-circle" style={{ color: 'var(--primary-color)', marginTop: '4px' }}></i><span>La préparation du terrain (nettoyage, nivellement, apport de terre).</span></li>
+                                <li style={{ display: 'flex', gap: '15px' }}><i className="fas fa-check-circle" style={{ color: 'var(--primary-color)', marginTop: '4px' }}></i><span>La plantation d'arbres, d'arbustes, de fleurs ou de gazon.</span></li>
+                                <li style={{ display: 'flex', gap: '15px' }}><i className="fas fa-check-circle" style={{ color: 'var(--primary-color)', marginTop: '4px' }}></i><span>La création de massifs, de haies ou d'un potager.</span></li>
+                                <li style={{ display: 'flex', gap: '15px' }}><i className="fas fa-check-circle" style={{ color: 'var(--primary-color)', marginTop: '4px' }}></i><span>L'aménagement paysager : allées, bordures, rocailles, paillage.</span></li>
+                                <li style={{ display: 'flex', gap: '15px' }}><i className="fas fa-check-circle" style={{ color: 'var(--primary-color)', marginTop: '4px' }}></i><span>La pose d'éléments décoratifs ou pratiques : terrasse, clôture, pergola, éclairage extérieur, etc.</span></li>
                             </ul>
-
-                            <div style={{ padding: '1.5rem', background: 'white', borderRadius: '12px', borderLeft: '4px solid var(--primary-color)', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
-                                <p style={{ margin: 0, fontStyle: 'italic', color: '#64748b', fontSize: '0.95rem' }}>
-                                    <i className="fas fa-info-circle" style={{ marginRight: '8px', color: 'var(--primary-color)' }}></i>
-                                    Pour les chantiers importants, nous étudions toutes demandes de déplacement hors zone habituelle. N'hésitez pas à nous consulter.
-                                </p>
+                        </div>
+                        
+                        <div style={{ background: '#f8fafc', padding: '2.5rem', borderRadius: '24px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+                            <h3 style={{ fontSize: '1.4rem', marginBottom: '1.5rem', color: '#0f172a', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                <div style={{ width: '40px', height: '40px', background: '#e0f2fe', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0369a1' }}><i className="fas fa-tags"></i></div>
+                                Nos spécialités
+                            </h3>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                                {[
+                                    "Création de bassin de jardin", "Création de jardin", "Désherbage", "Dessouchage", 
+                                    "Elagage d’arbres", "Entretien d’arbre", "Entretien de haie", "Taille d’arbre", 
+                                    "Jardinier paysagiste", "Jardinier élagueur", "Taille d’arbuste", "Taille d’arbre fruitier", 
+                                    "Tonte de gazon", "Traitement des arbres", "Dallage de jardin", "Entretien", 
+                                    "Création", "Aménagement"
+                                ].map((keyword, i) => (
+                                    <span key={i} style={{ background: 'white', padding: '6px 14px', borderRadius: '20px', fontSize: '0.9rem', color: '#475569', border: '1px solid #cbd5e1', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}>
+                                        {keyword}
+                                    </span>
+                                ))}
                             </div>
                         </div>
-
-                        {/* Visual Side - Premium Interactive Map */}
-                        <div style={{ position: 'relative', height: '500px', background: '#f8fafc', borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.1)', border: '1px solid white' }}>
-
-                            {/* Technical Grid Background */}
-                            <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(#e2e8f0 1px, transparent 1px), linear-gradient(90deg, #e2e8f0 1px, transparent 1px)', backgroundSize: '40px 40px', opacity: 0.5 }}></div>
-
-                            {/* Decorative Radial Gradient */}
-                            <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 50%, rgba(255,255,255,0) 0%, rgba(248,250,252,1) 80%)' }}></div>
-
-                            {/* Map Container - Centered */}
-                            <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-
-                                {/* Zone 3: Haute-Garonne (Wide) */}
-                                <div style={{ position: 'absolute', width: '550px', height: '550px', border: '1px dashed #cbd5e1', borderRadius: '50%', opacity: 0.6 }}></div>
-                                <div style={{ position: 'absolute', top: '150px', right: '100px', background: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.7rem', color: '#94a3b8', boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>Zone 3</div>
-
-                                {/* Zone 2: Agglomération (Medium) */}
-                                <div style={{ position: 'absolute', width: '350px', height: '350px', border: '1px solid #94a3b8', borderRadius: '50%', background: 'rgba(236, 252, 203, 0.15)' }}></div>
-                                <div style={{ position: 'absolute', top: '210px', right: '230px', background: 'white', padding: '4px 8px', borderRadius: '4px', fontSize: '0.7rem', color: '#65a30d', boxShadow: '0 2px 4px rgba(0,0,0,0.05)', fontWeight: '600' }}>Zone 2</div>
-
-                                {/* Zone 1: Toulouse Centre (Small) */}
-                                <div style={{ position: 'absolute', width: '180px', height: '180px', background: 'white', borderRadius: '50%', boxShadow: '0 10px 30px -5px rgba(0,0,0,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>
-                                    <div className="animate-pulse-ring" style={{ width: '100px', height: '100px', borderRadius: '50%', position: 'relative' }}></div>
-                                    <div style={{ width: '16px', height: '16px', background: '#ef4444', borderRadius: '50%', position: 'relative', zIndex: 20, boxShadow: '0 0 0 4px rgba(255,255,255,1), 0 0 20px rgba(239,68,68,0.4)' }}></div>
-                                    <div style={{ position: 'absolute', bottom: '-40px', fontWeight: '800', color: '#1e293b', fontSize: '1.1rem', letterSpacing: '-0.5px' }}>TOULOUSE</div>
-                                </div>
-
-                                {/* Floating Location Cards */}
-                                <div className="animate-float" style={{ position: 'absolute', top: '25%', left: '20%', background: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(8px)', padding: '10px 16px', borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)', border: '1px solid rgba(255,255,255,0.8)', zIndex: 20 }}>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                        <div style={{ width: '8px', height: '8px', background: '#0ea5e9', borderRadius: '50%' }}></div>
-                                        <span style={{ fontWeight: '600', fontSize: '0.9rem', color: '#334155' }}>Colomiers</span>
-                                    </div>
-                                    <span style={{ fontSize: '0.75rem', color: '#94a3b8', display: 'block', marginTop: '2px' }}>15 min</span>
-                                </div>
-
-                                <div className="animate-float" style={{ position: 'absolute', bottom: '30%', right: '15%', background: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(8px)', padding: '10px 16px', borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)', border: '1px solid rgba(255,255,255,0.8)', zIndex: 20, animationDelay: '1s' }}>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                        <div style={{ width: '8px', height: '8px', background: '#0ea5e9', borderRadius: '50%' }}></div>
-                                        <span style={{ fontWeight: '600', fontSize: '0.9rem', color: '#334155' }}>Labège</span>
-                                    </div>
-                                    <span style={{ fontSize: '0.75rem', color: '#94a3b8', display: 'block', marginTop: '2px' }}>20 min</span>
-                                </div>
-
-                                <div className="animate-float" style={{ position: 'absolute', top: '20%', right: '25%', background: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(8px)', padding: '10px 16px', borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)', border: '1px solid rgba(255,255,255,0.8)', zIndex: 20, animationDelay: '2s' }}>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                        <div style={{ width: '8px', height: '8px', background: '#0ea5e9', borderRadius: '50%' }}></div>
-                                        <span style={{ fontWeight: '600', fontSize: '0.9rem', color: '#334155' }}>Balma</span>
-                                    </div>
-                                    <span style={{ fontSize: '0.75rem', color: '#94a3b8', display: 'block', marginTop: '2px' }}>10 min</span>
-                                </div>
-
-                                {/* Connecting Lines (SVG overlay) */}
-                                <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', opacity: 0.3 }} viewBox="0 0 500 500">
-                                    <defs>
-                                        <linearGradient id="lineGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-                                            <stop offset="0%" stopColor="#cbd5e1" stopOpacity="0" />
-                                            <stop offset="50%" stopColor="#cbd5e1" stopOpacity="1" />
-                                            <stop offset="100%" stopColor="#cbd5e1" stopOpacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                    {/* Abstract paths - fixed d attributes */}
-                                    <path d="M250 250 L150 150" stroke="url(#lineGrad)" strokeWidth="1" strokeDasharray="5,5" />
-                                    <path d="M250 250 L350 350" stroke="url(#lineGrad)" strokeWidth="1" strokeDasharray="5,5" />
-                                    <path d="M250 250 L350 150" stroke="url(#lineGrad)" strokeWidth="1" strokeDasharray="5,5" />
-                                </svg>
-
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
             </section>

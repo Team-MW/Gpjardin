@@ -67,7 +67,7 @@ const About = () => {
     return (
         <>
             {/* Page Header */}
-            <section className="page-header" style={{ backgroundImage: "url('/aproposdenous.jpg')" }}>
+            <section className="page-header" style={{ backgroundImage: "url('/illustration-de-travaux-de-jardinage.webp')" }}>
                 <div className="container">
                     <h1 className="page-title">Notre Histoire</h1>
                     <p className="page-breadcrumb">
@@ -82,9 +82,9 @@ const About = () => {
                     <div className="about-grid-modern">
                         <div className="about-content">
                             <span className="section-tag">Qui sommes-nous</span>
-                            <h2 className="section-title">Plus de 25 ans de passion pour la nature</h2>
+                            <h2 className="section-title">5 ans de passion pour la nature</h2>
                             <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
-                                Fondée en 1998, GP JARDIN est née d'une vision simple : reconnecter les citadins à la nature. Ce qui a commencé comme une petite entreprise familiale est devenu une référence dans l'aménagement paysager à Toulouse.
+                                Fondée il y a 5 ans, GP JARDIN est née d'une vision simple : reconnecter les citadins à la nature. Ce qui a commencé comme une petite entreprise familiale est devenu une référence dans l'aménagement paysager à Toulouse.
                             </p>
                             <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '2rem' }}>
                                 Notre philosophie repose sur le respect de l'environnement, l'écoute attentive de nos clients et l'excellence technique. Chaque jardin est pour nous une toile vierge où nous peignons avec des fleurs, des pierres et de la lumière.
@@ -127,7 +127,7 @@ const About = () => {
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                     <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '3rem' }}>
 
-                        <StatItem end={25} suffix="+" label="Années d'expérience" icon="fa-hourglass-half" />
+                        <StatItem end={5} suffix="" label="Années d'expérience" icon="fa-hourglass-half" />
                         <StatItem end={500} suffix="+" label="Jardins Créés" icon="fa-tree" />
                         <StatItem end={100} suffix="%" label="Clients Satisfaits" icon="fa-smile" />
                         <StatItem end={10} suffix="+" label="Prix de Design" icon="fa-trophy" />
@@ -157,9 +157,9 @@ const About = () => {
                         </div>
                         <div className="feature-card">
                             <div className="feature-number" style={{ fontSize: '4rem', fontWeight: '800', opacity: '0.1', position: 'absolute', top: '10px', right: '20px' }}>02</div>
-                            <h3 className="feature-title">Conception</h3>
+                            <h3 className="feature-title">Devis</h3>
                             <p style={{ color: 'var(--text-light)' }}>
-                                Nos architectes paysagistes créent des plans détaillés et des vues 3D pour vous projeter dans votre futur jardin.
+                                À la suite de notre échange, nous vous proposons une étude personnalisée et un devis transparent, adapté à votre projet.
                             </p>
                         </div>
                         <div className="feature-card">
@@ -167,13 +167,6 @@ const About = () => {
                             <h3 className="feature-title">Réalisation</h3>
                             <p style={{ color: 'var(--text-light)' }}>
                                 Notre équipe technique réalise les travaux avec soin, en respectant les délais et votre propriété.
-                            </p>
-                        </div>
-                        <div className="feature-card">
-                            <div className="feature-number" style={{ fontSize: '4rem', fontWeight: '800', opacity: '0.1', position: 'absolute', top: '10px', right: '20px' }}>04</div>
-                            <h3 className="feature-title">Entretien</h3>
-                            <p style={{ color: 'var(--text-light)' }}>
-                                Nous proposons des services de suivi pour que votre jardin s'épanouisse et reste beau au fil des saisons.
                             </p>
                         </div>
                     </div>

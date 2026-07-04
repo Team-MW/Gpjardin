@@ -16,27 +16,27 @@ const Services = () => {
         },
         {
             title: 'Maçonnerie Paysagère',
-            description: 'Création de terrasses, allées, murets et bassins pour structurer votre espace.',
+            description: 'Allées, murets et bassins pour structurer votre espace.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services03.jpg',
             icon: 'fa-hard-hat'
         },
         {
             title: 'Plantations & Gazon',
-            description: 'Installation de gazon en rouleau, plantation d\'arbres et massifs floraux.',
+            description: 'Installation de gazon (en rouleau, en semi et synthétique). Plantation d\'arbres, d\'arbustes et création de massifs floraux.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services04.jpg',
             icon: 'fa-seedling'
         },
         {
-            title: 'Arrosage Automatique',
-            description: 'Solutions d\'irrigation intelligentes pour économiser l\'eau et votre temps.',
+            title: 'Aménagement sur Plan',
+            description: 'Réaménagement complet de votre extérieur sur plan, pour repenser les volumes et créer un jardin sur-mesure.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services-1.jpg',
-            icon: 'fa-faucet'
+            icon: 'fa-drafting-compass'
         },
         {
-            title: 'Éclairage Extérieur',
-            description: 'Mise en valeur de votre jardin la nuit avec des ambiances lumineuses subtiles.',
+            title: 'Entretien de Copropriétés',
+            description: 'Contrats réguliers pour la gestion et l\'entretien soigné des espaces verts de votre copropriété ou résidence.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/projects-03.jpg',
-            icon: 'fa-lightbulb'
+            icon: 'fa-building'
         },
     ];
 

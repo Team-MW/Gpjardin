@@ -75,18 +75,29 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <span style={{ display: 'block', fontSize: '0.9rem', color: 'var(--text-light)', fontWeight: '600', textTransform: 'uppercase', marginBottom: '0.2rem' }}>Email</span>
-                                        <a href="mailto:contact@gpjardin.com" style={{ fontSize: '1.2rem', fontWeight: '700', color: 'var(--secondary-color)' }}>contact@gpjardin.com</a>
+                                        <a href="mailto:Gp.jardin31@gmail.com" style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--secondary-color)' }}>Gp.jardin31@gmail.com</a>
                                     </div>
                                 </div>
 
-                                {/* Address C.  ard */}
+                                {/* Address Card */}
                                 <div className="info-card" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', padding: '1.5rem', background: 'var(--white)', borderRadius: '16px', boxShadow: 'var(--shadow-sm)', transition: 'transform 0.3s ease' }}>
                                     <div style={{ width: '60px', height: '60px', background: 'var(--accent-color)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary-color)', fontSize: '1.5rem', flexShrink: 0 }}>
                                         <i className="fas fa-map-marker-alt"></i>
                                     </div>
                                     <div>
                                         <span style={{ display: 'block', fontSize: '0.9rem', color: 'var(--text-light)', fontWeight: '600', textTransform: 'uppercase', marginBottom: '0.2rem' }}>Localisation</span>
-                                        <span style={{ fontSize: '1.2rem', fontWeight: '700', color: 'var(--secondary-color)' }}>Toulouse, France</span>
+                                        <span style={{ fontSize: '1.2rem', fontWeight: '700', color: 'var(--secondary-color)' }}>Colomiers</span>
+                                    </div>
+                                </div>
+
+                                {/* Horaires Card */}
+                                <div className="info-card" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', padding: '1.5rem', background: 'var(--white)', borderRadius: '16px', boxShadow: 'var(--shadow-sm)', transition: 'transform 0.3s ease' }}>
+                                    <div style={{ width: '60px', height: '60px', background: 'var(--accent-color)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary-color)', fontSize: '1.5rem', flexShrink: 0 }}>
+                                        <i className="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <span style={{ display: 'block', fontSize: '0.9rem', color: 'var(--text-light)', fontWeight: '600', textTransform: 'uppercase', marginBottom: '0.2rem' }}>Horaires</span>
+                                        <span style={{ fontSize: '1.2rem', fontWeight: '700', color: 'var(--secondary-color)' }}>Lundi - Vendredi</span>
                                     </div>
                                 </div>
 

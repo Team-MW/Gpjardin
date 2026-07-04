@@ -16,9 +16,8 @@ const Footer = () => {
                                 />
                             </Link>
                             <p className="footer-desc">
-                                Votre expert en aménagement paysager depuis plus de 25 ans. Nous
-                                transformons vos espaces extérieurs en véritables havres de paix,
-                                alliant esthétisme et durabilité.
+                                Votre expert en aménagement paysager avec 5 ans d'expérience. Nous
+                                concevons, réalisons et entretenons vos espaces verts.
                             </p>
                             <div className="footer-social">
                                 <a
@@ -105,18 +104,18 @@ const Footer = () => {
                         <div className="footer-col contact-col">
                             <h4 className="footer-heading">Nous Contacter</h4>
                             <ul className="footer-links footer-contact">
-                                <li>
-                                    <i className="fas fa-map-marker-alt"></i>
-                                    <span>Toulouse et ses environs,<br />Occitanie, France</span>
-                                </li>
+                                <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                                    <i className="fas fa-map-marker-alt" style={{ marginTop: '5px' }}></i>
+                                    <span>Colomiers et ses environs,<br />Occitanie, France</span>
+                                </div>
                                 <li>
                                     <i className="fas fa-phone-alt"></i>
                                     <a href="tel:+33666703045" className="phone-link">06 66 70 30 45</a>
                                 </li>
-                                <li>
+                                <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                                     <i className="fas fa-envelope"></i>
-                                    <a href="mailto:contact@gpjardin.com">contact@gpjardin.com</a>
-                                </li>
+                                    <a href="mailto:Gp.jardin31@gmail.com">Gp.jardin31@gmail.com</a>
+                                </div>
                             </ul>
 
                             <h4 className="footer-heading" style={{ marginTop: '2rem', marginBottom: '1rem' }}>Horaires</h4>
