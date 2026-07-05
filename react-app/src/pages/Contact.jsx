@@ -11,6 +11,7 @@ const contactFaqs = [
 
 const Contact = () => {
     const formRef = useRef(null);
+    const location = useLocation();
 
     useEffect(() => {
         if (formRef.current && formRef.current.children.length === 0) {
@@ -21,6 +22,17 @@ const Contact = () => {
             formRef.current.appendChild(script);
         }
     }, []);
+
+    useEffect(() => {
+        if (location.hash === '#devis') {
+            const element = document.getElementById('devis');
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 500);
+            }
+        }
+    }, [location]);
 
     return (
         <>
@@ -104,7 +116,7 @@ const Contact = () => {
                         </div>
 
                         {/* Form Column */}
-                        <div className="contact-form-wrapper" style={{ position: 'relative', overflow: 'hidden' }}>
+                        <div id="devis" className="contact-form-wrapper" style={{ position: 'relative', overflow: 'hidden' }}>
                             <div ref={formRef} style={{ width: '100%' }}></div>
                         </div>
 

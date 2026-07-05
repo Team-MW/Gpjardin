@@ -75,7 +75,7 @@ const Home = () => {
                         Transformez votre espace extérieur en un véritable havre de paix grâce à notre expertise en aménagement paysager et entretien de jardin.
                     </p>
                     <div className="hero-buttons">
-                        <Link to="/contact" className="btn btn-primary">
+                        <Link to="/contact#devis" className="btn btn-primary">
                             Demander un devis
                             <i className="fas fa-arrow-right" style={{ marginLeft: '10px' }}></i>
                         </Link>
@@ -439,7 +439,7 @@ const Home = () => {
                         <p style={{ fontSize: '1.2rem', marginBottom: '2.5rem', opacity: 0.9 }}>
                             Bénéficiez d'une première consultation gratuite pour discuter de vos envies.
                         </p>
-                        <Link to="/contact" className="btn btn-primary" style={{ minWidth: '200px' }}>
+                        <Link to="/contact#devis" className="btn btn-primary" style={{ minWidth: '200px' }}>
                             Obtenir un devis gratuit
                         </Link>
                     </div>

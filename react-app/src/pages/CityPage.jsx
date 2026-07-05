@@ -56,7 +56,7 @@ const CityPage = () => {
                             </a>
                             
                             <Link 
-                                to="/contact"
+                                to="/contact#devis"
                                 style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: 'white', padding: '15px 30px', borderRadius: '8px', fontSize: '1.1rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', transition: 'all 0.3s' }}
                                 onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'}
                                 onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}

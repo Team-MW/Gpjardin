@@ -87,7 +87,7 @@ const Header = () => {
                 </nav>
 
                 <div className="header-cta">
-                    <Link to="/contact" className="btn btn-primary">
+                    <Link to="/contact#devis" className="btn btn-primary">
                         Devis Gratuit
                     </Link>
                 </div>
