@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import FAQ from '../components/FAQ';
 
 const CityPage = () => {
     const { cityId } = useParams();
@@ -77,6 +78,17 @@ const CityPage = () => {
                     </div>
                 </div>
             </section>
+
+            {/* FAQ Section */}
+            <FAQ 
+                faqs={[
+                    { question: `Intervenez-vous pour l'entretien de petits jardins à ${cityName} ?`, answer: `Oui, que vous ayez un petit jardin de ville ou un grand parc, nos équipes se déplacent à ${cityName} pour tous vos besoins d'aménagement et d'entretien.` },
+                    { question: `Quelles sont les plantes les plus adaptées pour un jardin à ${cityName} ?`, answer: `Le climat de la région impose des végétaux résistants aux étés secs et chauds. Nous conseillons souvent des essences méditerranéennes (oliviers, lauriers, lavandes) qui s'épanouissent parfaitement à ${cityName}.` },
+                    { question: `Proposez-vous la pose de gazon en rouleau à ${cityName} ?`, answer: `Absolument. La pose de gazon de placage est l'une de nos spécialités pour un résultat vert et immédiat dans votre jardin à ${cityName}.` },
+                    { question: `Faut-il un permis pour aménager son jardin à ${cityName} ?`, answer: `La plupart des aménagements paysagers ne nécessitent pas de permis. Cependant, pour des clôtures ou des abris de jardin spécifiques, une déclaration préalable à la mairie de ${cityName} peut être requise. Nous vous accompagnons dans ces démarches.` }
+                ]} 
+                title={`Questions Fréquentes - Paysagiste à ${cityName}`} 
+            />
         </div>
     );
 };

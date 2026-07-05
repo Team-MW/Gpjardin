@@ -31,11 +31,11 @@ const Header = () => {
 
                 <nav>
                     <button
-                        className="mobile-menu-toggle"
+                        className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`}
                         aria-label="Menu"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
-                        <i className="fas fa-bars"></i>
+                        <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
                     </button>
                     <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
                         <li>

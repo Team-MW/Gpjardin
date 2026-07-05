@@ -1,5 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import FAQ from '../components/FAQ';
+
+const contactFaqs = [
+    { question: "Le devis est-il gratuit ?", answer: "Oui, notre première visite d'évaluation sur place et le devis qui en découle sont entièrement gratuits et sans engagement." },
+    { question: "Quels sont vos délais d'intervention ?", answer: "Nos délais varient selon la saison et la nature du projet. Généralement, pour un entretien, nous intervenons sous quelques jours. Pour une création complète, cela dépend de notre planning, que nous vous communiquons dès le devis." },
+    { question: "Comment se déroule la première visite ?", answer: "Nous nous déplaçons chez vous pour prendre les mesures, écouter vos envies, évaluer la faisabilité technique, et vous conseiller sur les meilleures options esthétiques et budgétaires." },
+    { question: "Puis-je vous envoyer des photos de mon jardin avant la visite ?", answer: "C'est une excellente idée ! Vous pouvez nous envoyer des photos de l'état actuel ou des inspirations par email pour nous aider à préparer notre rendez-vous." }
+];
 
 const Contact = () => {
     const formRef = useRef(null);
@@ -103,6 +111,9 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+
+            {/* FAQ Section */}
+            <FAQ faqs={contactFaqs} />
 
             {/* Map Section */}
             <section style={{ height: '450px', width: '100%', position: 'relative' }}>

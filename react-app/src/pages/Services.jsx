@@ -1,5 +1,12 @@
 import { Link } from 'react-router-dom';
+import FAQ from '../components/FAQ';
 
+const servicesFaqs = [
+    { question: "Gérez-vous la pose de systèmes d'arrosage automatique ?", answer: "Oui, nous installons des systèmes d'arrosage intégrés et connectés, programmables selon les besoins de chaque zone végétale pour optimiser votre consommation d'eau." },
+    { question: "Réalisez-vous la pose de clôtures et de portails ?", answer: "Tout à fait. Nous posons tous types de clôtures (bois, rigide, végétalisée) pour délimiter, sécuriser et préserver l'intimité de votre propriété." },
+    { question: "Est-ce que vos services d'entretien sont déductibles des impôts ?", answer: "Oui, pour les particuliers, nos prestations de petit jardinage et d'entretien courant entrent dans le cadre des services à la personne, vous permettant de bénéficier d'un crédit d'impôt de 50%." },
+    { question: "Travaillez-vous aussi pour des professionnels ou des copropriétés ?", answer: "Oui, nous avons des partenariats avec plusieurs syndics et entreprises pour l'aménagement et l'entretien régulier de leurs espaces verts professionnels." }
+];
 const Services = () => {
     const services = [
         {
@@ -83,6 +90,9 @@ const Services = () => {
                     </div>
                 </div>
             </section>
+
+            {/* FAQ Section */}
+            <FAQ faqs={servicesFaqs} />
 
             <section className="container" style={{ marginBottom: 'var(--spacing-lg)' }}>
                 <div className="cta-modern">

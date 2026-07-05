@@ -928,12 +928,33 @@ img {
     position: relative;
   }
 
+  .mobile-menu-toggle.open {
+    color: var(--secondary-color);
+  }
+
   .site-header.scrolled .mobile-menu-toggle {
     color: var(--secondary-color);
   }
 
+  .hero-content {
+    margin-top: 5rem;
+  }
+
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
   }
 
   .about-grid-modern {
@@ -949,6 +970,11 @@ img {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .accent-img {

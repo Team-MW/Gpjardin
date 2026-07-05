@@ -1,5 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
+import FAQ from '../components/FAQ';
+
+const aboutFaqs = [
+    { question: "Depuis combien de temps GP Jardin existe-t-elle ?", answer: "GP Jardin met son expertise et sa passion au service des particuliers et professionnels de la Haute-Garonne depuis 5 ans." },
+    { question: "Où êtes-vous situés et quelle est votre zone d'intervention principale ?", answer: "Nous sommes basés près de Toulouse et intervenons principalement dans toute l'agglomération toulousaine, y compris Blagnac, Colomiers, Balma, et les communes environnantes." },
+    { question: "Avez-vous une démarche éco-responsable ?", answer: "Oui, nous privilégions l'utilisation de matériaux durables, la sélection de plantes adaptées au climat local pour limiter l'arrosage, et des méthodes d'entretien respectueuses de la biodiversité (pas de produits phytosanitaires nocifs)." },
+    { question: "Qu'est-ce qui différencie GP Jardin des autres paysagistes ?", answer: "Notre approche artisanale et notre statut de véritables 'architectes de la nature'. Nous offrons un accompagnement premium de la conception à la réalisation, avec un seul interlocuteur dédié." }
+];
 
 const StatItem = ({ end, suffix, label, icon }) => {
     const [count, setCount] = useState(0);
@@ -80,39 +88,47 @@ const About = () => {
             <section className="section-padding" style={{ background: 'var(--white)' }}>
                 <div className="container">
                     <div className="about-grid-modern">
-                        <div className="about-content">
-                            <span className="section-tag">Qui sommes-nous</span>
-                            <h2 className="section-title">5 ans de passion pour la nature</h2>
-                            <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
-                                Fondée il y a 5 ans, GP JARDIN est née d'une vision simple : reconnecter les citadins à la nature. Ce qui a commencé comme une petite entreprise familiale est devenu une référence dans l'aménagement paysager à Toulouse.
-                            </p>
-                            <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '2rem' }}>
-                                Notre philosophie repose sur le respect de l'environnement, l'écoute attentive de nos clients et l'excellence technique. Chaque jardin est pour nous une toile vierge où nous peignons avec des fleurs, des pierres et de la lumière.
-                            </p>
-
-                            <div className="checklist">
-                                <div className="checklist-item">
-                                    <span className="checklist-icon"><i className="fas fa-check-circle"></i></span>
-                                    <span>Équipe d'experts qualifiés et passionnés</span>
-                                </div>
-                                <div className="checklist-item">
-                                    <span className="checklist-icon"><i className="fas fa-check-circle"></i></span>
-                                    <span>Utilisation de matériaux durables et écologiques</span>
-                                </div>
-                                <div className="checklist-item">
-                                    <span className="checklist-icon"><i className="fas fa-check-circle"></i></span>
-                                    <span>Service client réactif et personnalisé</span>
-                                </div>
-                            </div>
-                        </div>
-
                         <div className="about-image-wrapper">
                             <div className="dot-pattern"></div>
                             <img
-                                src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/about-2.jpg"
-                                alt="Notre équipe"
+                                src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/about-1.jpg"
+                                alt="Paysagiste professionnel à Toulouse en action"
                                 className="main-img"
                             />
+                            <img
+                                src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/about-2.jpg"
+                                alt="Détail aménagement jardin durable"
+                                className="accent-img"
+                            />
+                        </div>
+
+                        <div className="about-content">
+                            <span className="section-tag">Votre Paysagiste à Toulouse</span>
+                            <h2 className="section-title">Créateurs d'espaces verts d'exception en Haute-Garonne</h2>
+                            <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
+                                Depuis 5 ans, <strong>GP JARDIN</strong> met sa passion et son expertise au service des particuliers et professionnels de la région toulousaine. Plus qu'une simple entreprise de jardinage, nous sommes des architectes de la nature.
+                            </p>
+                            <p style={{ fontSize: '1rem', color: 'var(--text-light)', marginBottom: '2rem', lineHeight: '1.8' }}>
+                                Que vous rêviez d'un <em>jardin zen</em>, d'une <em>terrasse en bois exotique</em> ou d'un <em>espace végétalisé nécessitant peu d'entretien</em>, notre bureau d'étude conçoit des projets sur-mesure qui valorisent votre patrimoine immobilier. Nous intervenons à Toulouse, Blagnac, Colomiers, Balma et dans toute l'agglomération pour la création et l'entretien de vos extérieurs.
+                            </p>
+
+                            <div className="stats-wrapper">
+                                <div className="stat-box">
+                                    <div className="stat-number">5</div>
+                                    <div>
+                                        <h4 style={{ fontWeight: 700, color: 'var(--secondary-color)' }}>Années d'expérience</h4>
+                                        <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>Savoir-faire artisanal</p>
+                                    </div>
+                                </div>
+
+                                <div className="stat-box">
+                                    <div className="stat-number">500+</div>
+                                    <div>
+                                        <h4 style={{ fontWeight: 700, color: 'var(--secondary-color)' }}>Jardins transformés</h4>
+                                        <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>Clients satisfaits en 31</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,6 +188,9 @@ const About = () => {
                     </div>
                 </div>
             </section>
+
+            {/* FAQ Section */}
+            <FAQ faqs={aboutFaqs} />
 
             {/* CTA Section */}
             <section className="container" style={{ marginBottom: 'var(--spacing-lg)' }}>

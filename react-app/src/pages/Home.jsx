@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import FAQ from '../components/FAQ';
 
+const homeFaqs = [
+    { question: "Quels types d'aménagements paysagers réalisez-vous à Toulouse ?", answer: "Nous couvrons l'ensemble des besoins en aménagement extérieur : création de jardins sur-mesure (zen, méditerranéen, moderne), pose de terrasses en bois exotique, plantation de massifs, engazonnement, et petite maçonnerie paysagère." },
+    { question: "Proposez-vous des contrats d'entretien pour les jardins existants ?", answer: "Oui, nous proposons des contrats annuels ou des interventions ponctuelles pour la tonte, la taille des haies, l'élagage et le nettoyage de vos espaces verts, avec la possibilité de bénéficier d'avantages fiscaux (service à la personne)." },
+    { question: "Combien coûte la création d'un jardin ?", answer: "Le budget varie selon la surface, les matériaux choisis et la complexité des aménagements. Nous proposons toujours une première visite suivie d'un devis transparent et détaillé, sans surprise." },
+    { question: "Faites-vous des visualisations 3D de mon futur jardin ?", answer: "Absolument. Notre bureau d'étude peut concevoir des modélisations 3D pour vous permettre de vous projeter visuellement dans votre futur espace avant le début des travaux." }
+];
 const Home = () => {
     useEffect(() => {
         // Scroll reveal animation
@@ -89,113 +96,41 @@ const Home = () => {
 
 
 
-            {/* About Section - Modern Layout */}
-            <section className="section-padding reveal">
-                <div className="container">
-                    <div className="about-grid-modern">
-                        <div className="about-image-wrapper">
-                            <div className="dot-pattern"></div>
-                            <img
-                                src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/about-1.jpg"
-                                alt="Paysagiste professionnel à Toulouse en action"
-                                className="main-img"
-                            />
-                            <img
-                                src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/about-2.jpg"
-                                alt="Détail aménagement jardin durable"
-                                className="accent-img"
-                            />
-                        </div>
 
-                        <div className="about-content">
-                            <span className="section-tag">Votre Paysagiste à Toulouse</span>
-                            <h2 className="section-title">Créateurs d'espaces verts d'exception en Haute-Garonne</h2>
-                            <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-                                Depuis 5 ans, <strong>GP JARDIN</strong> met sa passion et son expertise au service des particuliers et professionnels de la région toulousaine. Plus qu'une simple entreprise de jardinage, nous sommes des architectes de la nature.
-                            </p>
-                            <p style={{ fontSize: '1rem', color: 'var(--text-light)', marginBottom: '2rem', lineHeight: '1.8' }}>
-                                Que vous rêviez d'un <em>jardin zen</em>, d'une <em>terrasse en bois exotique</em> ou d'un <em>espace végétalisé nécessitant peu d'entretien</em>, notre bureau d'étude conçoit des projets sur-mesure qui valorisent votre patrimoine immobilier. Nous intervenons à Toulouse, Blagnac, Colomiers, Balma et dans toute l'agglomération pour la création et l'entretien de vos extérieurs.
-                            </p>
 
-                            <div className="stats-wrapper">
-                                <div className="stat-box">
-                                    <div className="stat-number">5</div>
-                                    <div>
-                                        <h4 style={{ fontWeight: 700, color: 'var(--secondary-color)' }}>Années d'expérience</h4>
-                                        <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>Savoir-faire artisanal</p>
-                                    </div>
-                                </div>
-
-                                <div className="stat-box">
-                                    <div className="stat-number">500+</div>
-                                    <div>
-                                        <h4 style={{ fontWeight: 700, color: 'var(--secondary-color)' }}>Jardins transformés</h4>
-                                        <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>Clients satisfaits en 31</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <Link to="/about" className="btn btn-text" style={{ marginTop: '1rem' }}>
-                                Découvrir notre histoire et nos valeurs <i className="fas fa-arrow-right" style={{ marginLeft: '8px' }}></i>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Process Section - Bento Grid Style */}
-            <section className="section-padding reveal" style={{ background: '#0f172a', color: 'white' }}>
-                <div className="container">
-                    <div className="section-title-wrapper" style={{ marginBottom: '4rem' }}>
-                        <span className="section-tag" style={{ background: 'rgba(255,255,255,0.1)', color: '#4ade80', border: 'none' }}>Notre Méthode</span>
-                        <h2 className="section-title" style={{ color: 'white' }}>Votre jardin de rêve en 3 étapes</h2>
-                        <p style={{ color: '#94a3b8', maxWidth: '600px', margin: '0 auto' }}>
-                            Une approche structurée et transparente pour transformer vos idées en réalité, sans stress et sans surprise.
-                        </p>
+            {/* Instagram Section */}
+            <section className="section-padding reveal" style={{ background: 'white' }}>
+                <div className="container" style={{ textAlign: 'center' }}>
+                    <div className="section-title-wrapper" style={{ marginBottom: '3rem' }}>
+                        <span className="section-tag" style={{ color: '#e1306c' }}>Nos Réalisations</span>
+                        <h2 className="section-title" style={{ fontSize: '2.2rem' }}>Suivez-nous sur Instagram</h2>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-
-                        {/* Step 1 */}
-                        <div style={{ background: '#1e293b', padding: '2.5rem', borderRadius: '24px', position: 'relative', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-                            <div style={{ position: 'absolute', top: '-20px', right: '-20px', fontSize: '8rem', fontWeight: '800', color: 'white', opacity: '0.03' }}>1</div>
-                            <div style={{ width: '60px', height: '60px', background: 'linear-gradient(135deg, #4ade80, #22c55e)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', color: '#064e3b', marginBottom: '1.5rem', boxShadow: '0 10px 20px -5px rgba(74, 222, 128, 0.4)' }}>
-                                <i className="fas fa-comments"></i>
-                            </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)' }}>Consultation</h3>
-                            <p style={{ color: '#cbd5e1', lineHeight: '1.7' }}>
-                                Nous nous rencontrons chez vous pour comprendre vos besoins, analyser votre terrain et discuter de vos envies.
-                            </p>
-                        </div>
-
-                        {/* Step 2 */}
-                        <div style={{ background: '#1e293b', padding: '2.5rem', borderRadius: '24px', position: 'relative', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-                            <div style={{ position: 'absolute', top: '-20px', right: '-20px', fontSize: '8rem', fontWeight: '800', color: 'white', opacity: '0.03' }}>2</div>
-                            <div style={{ width: '60px', height: '60px', background: 'linear-gradient(135deg, #38bdf8, #0ea5e9)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', color: '#0c4a6e', marginBottom: '1.5rem', boxShadow: '0 10px 20px -5px rgba(56, 189, 248, 0.4)' }}>
-                                <i className="fas fa-file-invoice-dollar"></i>
-                            </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)' }}>Devis</h3>
-                            <p style={{ color: '#cbd5e1', lineHeight: '1.7' }}>
-                                À la suite de notre échange, nous vous proposons une étude personnalisée et un devis transparent, adapté à votre projet.
-                            </p>
-                        </div>
-
-                        {/* Step 3 - Wide Card */}
-                        <div style={{ background: '#1e293b', padding: '2.5rem', borderRadius: '24px', position: 'relative', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', gridColumn: '1 / -1', display: 'flex', flexDirection: 'column', justifyContent: 'center', transition: 'transform 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-                            <div style={{ position: 'absolute', top: '-20px', right: '20px', fontSize: '10rem', fontWeight: '800', color: 'white', opacity: '0.03' }}>3</div>
-                            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem', flexWrap: 'wrap' }}>
-                                <div style={{ width: '60px', height: '60px', background: 'linear-gradient(135deg, #facc15, #eab308)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', color: '#422006', marginBottom: '1.5rem', boxShadow: '0 10px 20px -5px rgba(250, 204, 21, 0.4)', flexShrink: 0 }}>
-                                    <i className="fas fa-tools"></i>
-                                </div>
-                                <div style={{ flex: 1 }}>
-                                    <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)' }}>Réalisation</h3>
-                                    <p style={{ color: '#cbd5e1', lineHeight: '1.7', fontSize: '1.1rem', maxWidth: '800px' }}>
-                                        Notre équipe technique réalise les travaux avec soin, en respectant les délais et votre propriété. Nous donnons vie à votre extérieur avec professionnalisme.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', justifyItems: 'center' }}>
+                        <video 
+                            src="/videos/video1.mp4" 
+                            autoPlay 
+                            loop 
+                            muted 
+                            playsInline
+                            style={{ maxWidth: '400px', width: '100%', height: '580px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+                        ></video>
+                        <video 
+                            src="/videos/video2.mp4" 
+                            autoPlay 
+                            loop 
+                            muted 
+                            playsInline
+                            style={{ maxWidth: '400px', width: '100%', height: '580px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+                        ></video>
+                        <video 
+                            src="/videos/video3.mp4" 
+                            autoPlay 
+                            loop 
+                            muted 
+                            playsInline
+                            style={{ maxWidth: '400px', width: '100%', height: '580px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+                        ></video>
                     </div>
                 </div>
             </section>
@@ -407,6 +342,7 @@ const Home = () => {
                 </div>
             </section>
 
+
             {/* Zone d'Intervention Section */}
             <section className="section-padding reveal" style={{ background: '#f8fafc', padding: '6rem 0' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -491,6 +427,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            {/* FAQ Section */}
+            <FAQ faqs={homeFaqs} />
 
             {/* CTA Section - Modern */}
             <section className="container reveal">

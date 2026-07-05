@@ -1,5 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import FAQ from '../components/FAQ';
+
+const projectsFaqs = [
+    { question: "Puis-je voir vos réalisations en vrai ?", answer: "Nos chantiers se situent chez des particuliers, nous ne pouvons donc pas les visiter librement. Cependant, nous avons un portfolio très complet de photos et vidéos (avant/après) que nous vous présenterons lors de notre premier rendez-vous." },
+    { question: "Quel est le projet le plus ambitieux que vous ayez réalisé ?", answer: "Nous avons transformé des terrains vagues en véritables oasis avec piscine, terrasses multi-niveaux et jardins exotiques. Aucun projet n'est trop grand ni trop complexe pour notre bureau d'étude." },
+    { question: "Travaillez-vous avec des architectes ou décorateurs extérieurs ?", answer: "Nous avons notre propre bureau d'étude pour concevoir vos plans 3D. Toutefois, si vous travaillez déjà avec un architecte, nous collaborons avec plaisir pour exécuter ses plans à la perfection." },
+    { question: "Les végétaux que vous plantez sont-ils garantis ?", answer: "Oui, la reprise de nos plantations est garantie (sous condition de la mise en place d'un système d'arrosage automatique par nos soins). Si une plante ne survit pas la première année, nous la remplaçons." }
+];
 
 const Projects = () => {
     const [filter, setFilter] = useState('Tous');
@@ -167,6 +175,9 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
+
+            {/* FAQ Section */}
+            <FAQ faqs={projectsFaqs} />
 
             <section className="container" style={{ marginBottom: 'var(--spacing-lg)' }}>
                 <div className="cta-modern">
