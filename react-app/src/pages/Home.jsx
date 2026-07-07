@@ -272,94 +272,134 @@ const Home = () => {
                             <span style={{ fontWeight: '700', fontSize: '1.2rem', color: 'var(--secondary-color)' }}>4.9/5</span>
                             <span style={{ color: 'var(--text-light)' }}>sur Google</span>
                         </div>
-                        <a href="https://g.page/r/" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem', display: 'inline-flex', gap: '8px', background: 'white', color: '#15803d', border: '1px solid #15803d', borderRadius: '50px' }}>
+                        <a href="https://www.google.com/search?sca_esv=d7a897ae2fa4bc83&rlz=1C5CHFA_enFR1186FR1186&sxsrf=APpeQnunnVN1DImeksln72oGGpwj2l9tFw:1783433888272&q=Gp%20Jardin%20Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2N7c0NTWyNLI0NLEwsDQwNDE338DI-IqRz71AwSuxKCUzT8GxLLN4ESuaAABwhiYYPAAAAA&rldimm=7795529291480901477&tbm=lcl&hl=fr-CH&sa=X&ved=0CBEQ5foLahcKEwigrL_74MCVAxUAAAAAHQAAAAAQBQ#lkt=LocalPoiReviews&arid=ChZDSUhNMG9nS0VJQ0FnSURpdXZhbFZnEAE" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem', display: 'inline-flex', gap: '8px', background: 'white', color: '#15803d', border: '1px solid #15803d', borderRadius: '50px' }}>
                             <i className="fab fa-google"></i> Laisser un avis
                         </a>
                     </div>
 
-                    <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-                        {/* Review 1 - Jules Paulhiac */}
-                        <div style={{ background: 'white', padding: '2rem', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid rgba(0,0,0,0.05)' }}>
+                    {/* CSS for hiding scrollbar added inline for portability */}
+                    <style>{`
+                        .reviews-scroll::-webkit-scrollbar { display: none; }
+                        .reviews-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+                    `}</style>
+                    <div className="reviews-scroll" style={{ display: 'flex', overflowX: 'auto', gap: '2rem', padding: '1rem 0 2rem 0', scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch', margin: '0 -15px', paddingLeft: '15px', paddingRight: '15px' }}>
+                        
+                        {/* Review 1 - Paul Sanches */}
+                        <div style={{ background: 'white', padding: '1.5rem', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid rgba(0,0,0,0.05)', minWidth: '320px', flex: '0 0 auto', scrollSnapAlign: 'start', display: 'flex', flexDirection: 'column' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
                                 <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                                    <div style={{ width: '40px', height: '40px', background: '#e0f2fe', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: '#0369a1' }}>JP</div>
+                                    <div style={{ width: '40px', height: '40px', background: '#334155', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white', fontSize: '1.2rem' }}>PS</div>
                                     <div>
-                                        <h4 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0 }}>Jules Paulhiac</h4>
-                                        <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>7 avis • Il y a 3 mois</span>
+                                        <h4 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0, color: '#202124' }}>Paul Sanches</h4>
+                                        <span style={{ fontSize: '0.8rem', color: '#70757a' }}>13 avis • 1 photo</span>
                                     </div>
                                 </div>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '18px', opacity: 0.6 }} />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '18px', opacity: 0.8 }} />
                             </div>
-                            <div style={{ color: '#fbbf24', marginBottom: '0.75rem', fontSize: '0.9rem' }}>
-                                <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.75rem' }}>
+                                <div style={{ color: '#fbbc04', fontSize: '0.9rem' }}>
+                                    <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                                </div>
+                                <span style={{ fontSize: '0.8rem', color: '#70757a' }}>il y a 7 ans</span>
                             </div>
-                            <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: '1.6', fontStyle: 'italic', marginBottom: '0.5rem' }}>
-                                "Franchement au top ! Je recommande à tout mon entourage. Gabriel a été super arrangeant et très pro. Super travail ! À bientôt !"
+                            <p style={{ color: '#3c4043', fontSize: '0.95rem', lineHeight: '1.5', marginBottom: '1rem', flex: 1 }}>
+                                "Un super service, j'ai fait appel à eux 2 fois et mon jardin était nickel à chaque fois suite à leur intervention, je recommande !"
                             </p>
-                            <span style={{ fontSize: '0.75rem', color: '#cbd5e1' }}>Visité en septembre 2025</span>
                         </div>
 
-                        {/* Review 2 - Bertrand Cazaux */}
-                        <div style={{ background: 'white', padding: '2rem', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid rgba(0,0,0,0.05)' }}>
+                        {/* Review 2 - Sylvain Sanchis */}
+                        <div style={{ background: 'white', padding: '1.5rem', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid rgba(0,0,0,0.05)', minWidth: '320px', flex: '0 0 auto', scrollSnapAlign: 'start', display: 'flex', flexDirection: 'column' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
                                 <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                                    <div style={{ width: '40px', height: '40px', background: '#f0fdf4', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: '#15803d' }}>BC</div>
+                                    <div style={{ width: '40px', height: '40px', background: '#0284c7', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white', fontSize: '1.2rem' }}>SS</div>
                                     <div>
-                                        <h4 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0 }}>Bertrand Cazaux</h4>
-                                        <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>4 avis • Il y a 8 mois</span>
+                                        <h4 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0, color: '#202124' }}>Sylvain Sanchis</h4>
+                                        <span style={{ fontSize: '0.8rem', color: '#70757a' }}>7 avis</span>
                                     </div>
                                 </div>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '18px', opacity: 0.6 }} />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '18px', opacity: 0.8 }} />
                             </div>
-                            <div style={{ color: '#fbbf24', marginBottom: '0.75rem', fontSize: '0.9rem' }}>
-                                <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.75rem' }}>
+                                <div style={{ color: '#fbbc04', fontSize: '0.9rem' }}>
+                                    <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                                </div>
+                                <span style={{ fontSize: '0.8rem', color: '#70757a' }}>il y a 7 ans</span>
                             </div>
-                            <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: '1.6', fontStyle: 'italic', marginBottom: '0.5rem' }}>
-                                "Le devis n'était pas le moins cher. J'ai suivi les conseils de mon frère qu'il a fait travailler chez lui et je suis très satisfait."
+                            <p style={{ color: '#3c4043', fontSize: '0.95rem', lineHeight: '1.5', marginBottom: '1rem', flex: 1 }}>
+                                "Répond à tous vos exigences et plus donne de très bon conseil en rapport au terrain et la région je RECOMMANDE FORTEMENT"
                             </p>
-                            <span style={{ fontSize: '0.75rem', color: '#cbd5e1' }}>Visité en avril 2025</span>
                         </div>
 
-                        {/* Review 3 - Oliver Letang */}
-                        <div style={{ background: 'white', padding: '2rem', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid rgba(0,0,0,0.05)' }}>
+                        {/* Review 3 - Véronique Pascal */}
+                        <div style={{ background: 'white', padding: '1.5rem', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid rgba(0,0,0,0.05)', minWidth: '320px', flex: '0 0 auto', scrollSnapAlign: 'start', display: 'flex', flexDirection: 'column' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
                                 <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                                    <div style={{ width: '40px', height: '40px', background: '#fef3c7', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: '#b45309' }}>OL</div>
+                                    <div style={{ width: '40px', height: '40px', background: '#14b8a6', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white', fontSize: '1.2rem' }}>VP</div>
                                     <div>
-                                        <h4 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0 }}>Oliver Letang</h4>
-                                        <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>1 avis • Il y a 8 mois</span>
+                                        <h4 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0, color: '#202124' }}>Véronique Pascal</h4>
+                                        <span style={{ fontSize: '0.8rem', color: '#70757a' }}>4 avis</span>
                                     </div>
                                 </div>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '18px', opacity: 0.6 }} />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '18px', opacity: 0.8 }} />
                             </div>
-                            <div style={{ color: '#fbbf24', marginBottom: '0.75rem', fontSize: '0.9rem' }}>
-                                <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.75rem' }}>
+                                <div style={{ color: '#fbbc04', fontSize: '0.9rem' }}>
+                                    <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                                </div>
+                                <span style={{ fontSize: '0.8rem', color: '#70757a' }}>il y a un an</span>
                             </div>
-                            <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: '1.6', fontStyle: 'italic', marginBottom: '0.5rem' }}>
-                                "Très satisfait du travail réalisé ! Réactif, professionnel et à l’écoute. Le résultat est impeccable, exactement ce qu’on attendait. Je recommande vivement !"
+                            <p style={{ color: '#3c4043', fontSize: '0.95rem', lineHeight: '1.5', marginBottom: '1rem', flex: 1 }}>
+                                "Un résultat parfait !"
                             </p>
-                            <span style={{ fontSize: '0.75rem', color: '#cbd5e1' }}>Visité en avril 2025</span>
+                            <span style={{ fontSize: '0.8rem', color: '#70757a' }}>Visité en mai 2025</span>
                         </div>
 
-                        {/* Review 4 - Laurent Paniagua */}
-                        <div style={{ background: 'white', padding: '2rem', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid rgba(0,0,0,0.05)' }}>
+                        {/* Review 4 - david C */}
+                        <div style={{ background: 'white', padding: '1.5rem', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid rgba(0,0,0,0.05)', minWidth: '320px', flex: '0 0 auto', scrollSnapAlign: 'start', display: 'flex', flexDirection: 'column' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
                                 <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                                    <div style={{ width: '40px', height: '40px', background: '#fae8ff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: '#86198f' }}>LP</div>
+                                    <div style={{ width: '40px', height: '40px', background: '#d97706', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white', fontSize: '1.2rem' }}>d</div>
                                     <div>
-                                        <h4 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0 }}>Laurent Paniagua</h4>
-                                        <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Local Guide • 22 avis</span>
+                                        <h4 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0, color: '#202124' }}>david C</h4>
+                                        <span style={{ fontSize: '0.8rem', color: '#70757a' }}>7 avis</span>
                                     </div>
                                 </div>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '18px', opacity: 0.6 }} />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '18px', opacity: 0.8 }} />
                             </div>
-                            <div style={{ color: '#fbbf24', marginBottom: '0.75rem', fontSize: '0.9rem' }}>
-                                <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.75rem' }}>
+                                <div style={{ color: '#fbbc04', fontSize: '0.9rem' }}>
+                                    <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                                </div>
+                                <span style={{ fontSize: '0.8rem', color: '#70757a' }}>il y a 5 ans</span>
                             </div>
-                            <p style={{ color: 'var(--text-light)', fontSize: '0.95rem', lineHeight: '1.6', fontStyle: 'italic', marginBottom: '0.5rem' }}>
-                                "Entreprise efficace, bien équipé, tarifs défiant toutes concurrences, personnel ponctuel et souriant, je recommande G.P Jardin. 👌👍"
+                            <p style={{ color: '#3c4043', fontSize: '0.95rem', lineHeight: '1.5', marginBottom: '1rem', flex: 1 }}>
+                                "Un excellent artisan : les devis sont clairs et détaillés, le créneau d'intervention respecté, l'équipe est professionnelle et sympathique, Yann Perrot est force de proposition et a l'amour du travail bien fait. Il assure également un ..."
                             </p>
-                            <span style={{ fontSize: '0.75rem', color: '#cbd5e1' }}>Visité en avril 2025</span>
+                            <span style={{ fontSize: '0.8rem', color: '#70757a' }}>Visité en octobre 2020</span>
+                        </div>
+
+                        {/* Review 5 - Sonia Perrot */}
+                        <div style={{ background: 'white', padding: '1.5rem', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid rgba(0,0,0,0.05)', minWidth: '320px', flex: '0 0 auto', scrollSnapAlign: 'start', display: 'flex', flexDirection: 'column' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
+                                <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                                    <div style={{ width: '40px', height: '40px', background: '#b45309', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white', fontSize: '1.2rem' }}>S</div>
+                                    <div>
+                                        <h4 style={{ fontSize: '0.95rem', fontWeight: '700', margin: 0, color: '#202124' }}>Sonia Perrot</h4>
+                                        <span style={{ fontSize: '0.8rem', color: '#70757a' }}>10 avis • 1 photo</span>
+                                    </div>
+                                </div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '18px', opacity: 0.8 }} />
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '0.75rem' }}>
+                                <div style={{ color: '#fbbc04', fontSize: '0.9rem' }}>
+                                    <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                                </div>
+                                <span style={{ fontSize: '0.8rem', color: '#70757a' }}>il y a un an</span>
+                            </div>
+                            <p style={{ color: '#3c4043', fontSize: '0.95rem', lineHeight: '1.5', marginBottom: '1rem', flex: 1 }}>
+                                "Super paysagiste à l'écoute de c'est client très sérieux avec beaucoup de bonne idée je le recommande fortement"
+                            </p>
+                            <span style={{ fontSize: '0.8rem', color: '#70757a' }}>Visité en mai 2025</span>
                         </div>
                     </div>
                 </div>
