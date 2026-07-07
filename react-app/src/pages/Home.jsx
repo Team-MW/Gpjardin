@@ -269,7 +269,7 @@ const Home = () => {
                                 <i className="fas fa-star"></i>
                                 <i className="fas fa-star"></i>
                             </div>
-                            <span style={{ fontWeight: '700', fontSize: '1.2rem', color: 'var(--secondary-color)' }}>4.9/5</span>
+                            <span style={{ fontWeight: '700', fontSize: '1.2rem', color: 'var(--secondary-color)' }}>5/5</span>
                             <span style={{ color: 'var(--text-light)' }}>sur Google</span>
                         </div>
                         <a href="https://www.google.com/search?sca_esv=d7a897ae2fa4bc83&rlz=1C5CHFA_enFR1186FR1186&sxsrf=APpeQnunnVN1DImeksln72oGGpwj2l9tFw:1783433888272&q=Gp%20Jardin%20Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2N7c0NTWyNLI0NLEwsDQwNDE338DI-IqRz71AwSuxKCUzT8GxLLN4ESuaAABwhiYYPAAAAA&rldimm=7795529291480901477&tbm=lcl&hl=fr-CH&sa=X&ved=0CBEQ5foLahcKEwigrL_74MCVAxUAAAAAHQAAAAAQBQ#lkt=LocalPoiReviews&arid=ChZDSUhNMG9nS0VJQ0FnSURpdXZhbFZnEAE" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem', display: 'inline-flex', gap: '8px', background: 'white', color: '#15803d', border: '1px solid #15803d', borderRadius: '50px' }}>
