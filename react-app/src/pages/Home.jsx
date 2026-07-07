@@ -103,7 +103,27 @@ const Home = () => {
                 <div className="container" style={{ textAlign: 'center' }}>
                     <div className="section-title-wrapper" style={{ marginBottom: '3rem' }}>
                         <span className="section-tag" style={{ color: '#e1306c' }}>Nos Réalisations</span>
-                        <h2 className="section-title" style={{ fontSize: '2.2rem' }}>Suivez-nous sur Instagram</h2>
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '1rem' }}>
+                            <a 
+                                href="https://www.instagram.com/gp.jardin31/?igsh=MzNscnd4dmMxaTI4" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                style={{ 
+                                    display: 'inline-flex', 
+                                    alignItems: 'center', 
+                                    gap: '15px', 
+                                    textDecoration: 'none',
+                                    transition: 'transform 0.3s ease'
+                                }}
+                                onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                            >
+                                <i className="fab fa-instagram" style={{ fontSize: '2.5rem', background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}></i>
+                                <h2 className="section-title" style={{ fontSize: '2.2rem', margin: 0, background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                                    Suivez-nous sur Instagram
+                                </h2>
+                            </a>
+                        </div>
                     </div>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', justifyItems: 'center' }}>
