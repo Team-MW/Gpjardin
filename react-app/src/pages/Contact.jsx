@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import FAQ from '../components/FAQ';
 
@@ -12,6 +12,22 @@ const contactFaqs = [
 const Contact = () => {
     const formRef = useRef(null);
     const location = useLocation();
+    const [isFormLoading, setIsFormLoading] = useState(true);
+
+    useEffect(() => {
+        const handleMessage = (e) => {
+            if (e.origin && e.origin.includes('jotform')) {
+                setIsFormLoading(false);
+            }
+        };
+        window.addEventListener('message', handleMessage);
+        const timer = setTimeout(() => setIsFormLoading(false), 5000); // fallback
+
+        return () => {
+            window.removeEventListener('message', handleMessage);
+            clearTimeout(timer);
+        };
+    }, []);
 
     useEffect(() => {
         if (formRef.current && formRef.current.children.length === 0) {
@@ -116,8 +132,22 @@ const Contact = () => {
                         </div>
 
                         {/* Form Column */}
-                        <div id="devis" className="contact-form-wrapper" style={{ position: 'relative', overflow: 'hidden' }}>
-                            <div ref={formRef} style={{ width: '100%' }}></div>
+                        <div id="devis" className="contact-form-wrapper" style={{ position: 'relative', overflow: 'hidden', minHeight: '600px' }}>
+                            {isFormLoading && (
+                                <div style={{ position: 'absolute', top: '100px', left: '0', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px', zIndex: 0 }}>
+                                    <style>
+                                        {`
+                                            @keyframes spin {
+                                                0% { transform: rotate(0deg); }
+                                                100% { transform: rotate(360deg); }
+                                            }
+                                        `}
+                                    </style>
+                                    <div style={{ width: '50px', height: '50px', border: '5px solid #e2e8f0', borderTop: '5px solid var(--primary-color)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div>
+                                    <span style={{ color: 'var(--text-light)', fontWeight: '600' }}>Chargement du formulaire...</span>
+                                </div>
+                            )}
+                            <div ref={formRef} style={{ width: '100%', position: 'relative', zIndex: 1, opacity: isFormLoading ? 0 : 1, transition: 'opacity 0.5s ease' }}></div>
                         </div>
 
                     </div>
