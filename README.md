@@ -15,18 +15,6 @@ Nos forfaits
 
 changer les avis google vrais et bouton laisse un avis 
 
-Ee trop Mondonville
-Seilh
-Aussonne
-Beauzelle
-Fenouillet
-Gagnac-sur-Garonne
-Lespinasse
-Saint-Alban
-Fonbeauzard
-Castelginest
-AucamvilleE
-Merville
 
 et rajouter 
 
