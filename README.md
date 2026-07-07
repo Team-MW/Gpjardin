@@ -1,20 +1,3 @@
-changer le bacground ici Nos Prestations
-Solutions complètes d'aménagement extérieur
-De la conception paysagère sur plan 3D à l'entretien annuel de vos espaces verts, nous maîtrisons toutes les compétences pour faire de votre jardin un lieu de vie unique.
-
-Conception de jardin 3D
-Étude & Conception 3D
-Notre bureau d'étude réalise des plans détaillés et des modélisations 3D pour vous projeter dans votre futur jardin avant le début des travaux. Choix des végétaux adaptés au climat toulousain, agencement des volumes et gestion de l'espace.
-
-En savoir plus
-Entretien jardin Toulouse
-Entretien & Soins
-Contrats d'entretien annuels ou ponctuels : tonte de pelouse, taille de haies, élagage d'arbres, désherbage écologique. Profitez d'un jardin impeccable en toute saison sans le moindre effort. Service éligible au crédit d'impôt.
-
-Nos forfaits
-
-changer les avis google vrais et bouton laisse un avis 
-
 
 et rajouter 
 

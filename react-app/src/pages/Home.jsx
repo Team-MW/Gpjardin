@@ -172,9 +172,9 @@ const Home = () => {
                                 <div className="service-overlay"></div>
                             </div>
                             <div className="service-content">
-                                <h3>Conception, Design & Création</h3>
+                                <h3>Conception & Création de Jardin</h3>
                                 <p style={{ color: 'var(--text-light)' }}>
-                                    En tant que jardinier paysagiste, notre bureau d'étude réalise vos plans 3D, étudie les sols et sélectionne les végétaux. Nous gérons votre projet de A à Z : création de jardin, conception paysagère et aménagement d'espaces verts uniques.
+                                    En tant que jardinier paysagiste expert, notre bureau d'étude paysagère conçoit votre aménagement d'espace vert sur-mesure. De la réalisation de plans 3D à la sélection rigoureuse des plantes et végétaux, nous orchestrons votre création de jardin de A à Z pour sublimer vos extérieurs.
                                 </p>
                                 <Link to="/services" className="service-link">
                                     En savoir plus <i className="fas fa-arrow-right"></i>
