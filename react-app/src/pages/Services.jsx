@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import FAQ from '../components/FAQ';
 
 const servicesFaqs = [
@@ -7,7 +8,33 @@ const servicesFaqs = [
     { question: "Est-ce que vos services d'entretien sont déductibles des impôts ?", answer: "Oui, pour les particuliers, nos prestations de petit jardinage et d'entretien courant entrent dans le cadre des services à la personne, vous permettant de bénéficier d'un crédit d'impôt de 50%." },
     { question: "Travaillez-vous aussi pour des professionnels ou des copropriétés ?", answer: "Oui, nous avons des partenariats avec plusieurs syndics et entreprises pour l'aménagement et l'entretien régulier de leurs espaces verts professionnels." }
 ];
+
+const projectsFaqs = [
+    { question: "Puis-je voir vos réalisations en vrai ?", answer: "Nos chantiers se situent chez des particuliers, nous ne pouvons donc pas les visiter librement. Cependant, nous avons un portfolio très complet de photos et vidéos (avant/après) que nous vous présenterons lors de notre premier rendez-vous." },
+    { question: "Quel est le projet le plus ambitieux que vous ayez réalisé ?", answer: "Nous avons transformé des terrains vagues en véritables oasis avec piscine, terrasses multi-niveaux et jardins exotiques. Aucun projet n'est trop grand ni trop complexe pour notre bureau d'étude." },
+    { question: "Travaillez-vous avec des architectes ou décorateurs extérieurs ?", answer: "Nous avons notre propre bureau d'étude pour concevoir vos plans 3D. Toutefois, si vous travaillez déjà avec un architecte, nous collaborons avec plaisir pour exécuter ses plans à la perfection." },
+    { question: "Les végétaux que vous plantez sont-ils garantis ?", answer: "Oui, la reprise de nos plantations est garantie (sous condition de la mise en place d'un système d'arrosage automatique par nos soins). Si une plante ne survit pas la première année, nous la remplaçons." }
+];
+
+const combinedFaqs = [...servicesFaqs, ...projectsFaqs];
+
 const Services = () => {
+    const [filter, setFilter] = useState('Tous');
+    const categories = ['Tous', 'Création', 'Entretien', 'Aménagement paysager'];
+
+    const projects = [
+        { id: 1, image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/projects-01.jpg', title: 'Jardin Zen Japonais', category: 'Création', location: 'Balma' },
+        { id: 2, image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/projects-03.jpg', title: 'Terrasse Bois & Piscine', category: 'Aménagement', location: 'Tournefeuille' },
+        { id: 3, image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/about-1.jpg', title: 'Entretien Parc Résidentiel', category: 'Entretien', location: 'Toulouse Centre' },
+        { id: 4, image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/about-2.jpg', title: 'Massifs Fleuris Exotiques', category: 'Création', location: 'Blagnac' },
+        { id: 5, image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services05.jpg', title: 'Conception 3D Villa', category: 'Création', location: 'L\'Union' },
+        { id: 6, image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services03.jpg', title: 'Allée Carrossable Pavés', category: 'Aménagement paysager', location: 'Colomiers' },
+    ];
+
+    const filteredProjects = filter === 'Tous'
+        ? projects
+        : projects.filter(project => project.category === filter);
+
     const services = [
         {
             title: 'Conception et Design',
@@ -51,7 +78,7 @@ const Services = () => {
         <>
             <section className="page-header" style={{ backgroundImage: "url('/nosservice.jpg')" }}>
                 <div className="container">
-                    <h1 className="page-title">Nos Services</h1>
+                    <h1 className="page-title">Nos Services & Réalisations</h1>
                     <p className="page-breadcrumb">
                         <Link to="/" style={{ color: 'var(--white)' }}>Accueil</Link> &gt; Services
                     </p>
@@ -91,8 +118,111 @@ const Services = () => {
                 </div>
             </section>
 
+            {/* Portfolio Section from Projects.jsx */}
+            <section className="section-padding" style={{ background: 'var(--light-bg)' }}>
+                <div className="container">
+                    <div className="section-title-wrapper">
+                        <span className="section-tag">Portfolio</span>
+                        <h2 className="section-title">Inspiration & Savoir-faire</h2>
+                        <p style={{ fontSize: '1.1rem', color: 'var(--text-light)' }}>
+                            Explorez nos derniers chantiers et laissez-vous inspirer pour votre futur projet d'aménagement extérieur.
+                        </p>
+                    </div>
+
+                    {/* Filters */}
+                    <div className="filters-container" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                        {categories.map((category) => (
+                            <button
+                                key={category}
+                                onClick={() => setFilter(category)}
+                                className={`filter-btn ${filter === category ? 'active' : ''}`}
+                                style={{
+                                    padding: '0.75rem 1.5rem',
+                                    margin: '0 0.5rem 0.5rem 0.5rem',
+                                    borderRadius: '50px',
+                                    border: filter === category ? '2px solid var(--primary-color)' : '2px solid rgba(0,0,0,0.1)',
+                                    background: filter === category ? 'var(--primary-color)' : 'transparent',
+                                    color: filter === category ? 'var(--white)' : 'var(--text-light)',
+                                    fontWeight: '600',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.3s ease',
+                                    fontSize: '0.95rem'
+                                }}
+                            >
+                                {category}
+                            </button>
+                        ))}
+                    </div>
+
+                    {/* Grid */}
+                    <div className="projects-grid-modern" style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+                        gap: '2rem'
+                    }}>
+                        {filteredProjects.map((project) => (
+                            <div key={project.id} className="project-card-modern" style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', height: '350px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', cursor: 'pointer' }}>
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s ease' }}
+                                    onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+                                    onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                                />
+
+                                <div style={{
+                                    position: 'absolute',
+                                    inset: 0,
+                                    background: 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'flex-end',
+                                    padding: '2rem',
+                                    color: 'white',
+                                    transition: 'background 0.3s ease'
+                                }}>
+                                    <div style={{ transform: 'translateY(0)', transition: 'transform 0.3s ease' }}>
+                                        <span style={{
+                                            color: 'var(--primary-color)',
+                                            fontWeight: '700',
+                                            fontSize: '0.85rem',
+                                            textTransform: 'uppercase',
+                                            letterSpacing: '1px'
+                                        }}>
+                                            {project.category}
+                                        </span>
+                                        <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', margin: '0.5rem 0 0.25rem 0', lineHeight: '1.2' }}>{project.title}</h3>
+                                        <p style={{ fontSize: '0.9rem', opacity: '0.8', margin: 0 }}><i className="fas fa-map-marker-alt" style={{ marginRight: '5px' }}></i> {project.location}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Process Mini Section */}
+            <section className="section-padding" style={{ background: 'var(--white)' }}>
+                <div className="container">
+                    <div className="about-grid-modern" style={{ alignItems: 'center' }}>
+                        <div className="content">
+                            <h2 className="section-title">Du rêve à la réalité</h2>
+                            <p style={{ color: 'var(--text-light)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>
+                                Chaque photo ci-dessus raconte l'histoire d'une transformation unique. Derrière chaque projet, il y a une écoute attentive, une conception sur mesure et une réalisation soignée.
+                            </p>
+                            <Link to="/contact" className="btn btn-outline" style={{ borderColor: 'var(--secondary-color)', color: 'var(--secondary-color)' }}>
+                                Démarrez votre transformation
+                            </Link>
+                        </div>
+                        <div className="image">
+                            <img src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services-1.jpg" alt="Transformation jardin" style={{ borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }} />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* FAQ Section */}
-            <FAQ faqs={servicesFaqs} />
+            <FAQ faqs={combinedFaqs} />
 
             <section className="container" style={{ marginBottom: 'var(--spacing-lg)' }}>
                 <div className="cta-modern">

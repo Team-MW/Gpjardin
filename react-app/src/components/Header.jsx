@@ -65,15 +65,7 @@ const Header = () => {
                                 Nos services
                             </Link>
                         </li>
-                        <li>
-                            <Link
-                                to="/projects"
-                                className={`nav-link ${isActive('/projects') ? 'active' : ''}`}
-                                onClick={() => setIsMobileMenuOpen(false)}
-                            >
-                                Nos projets
-                            </Link>
-                        </li>
+
                         <li>
                             <Link
                                 to="/contact"
