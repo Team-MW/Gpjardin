@@ -182,17 +182,18 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="service-card">
+                        <div className="service-card" style={{ background: 'linear-gradient(to bottom, #ffffff, #f0fdf4)', border: '2px solid #bbf7d0', position: 'relative', boxShadow: '0 10px 25px -5px rgba(84, 180, 53, 0.15)' }}>
+                            <div style={{ position: 'absolute', top: '15px', right: '15px', background: 'var(--primary-color)', color: 'white', padding: '6px 14px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 'bold', zIndex: 10, letterSpacing: '0.5px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>LE PLUS DEMANDÉ</div>
                             <div className="service-image">
                                 <img src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services02.jpg" alt="Entretien jardin Toulouse" />
                                 <div className="service-overlay"></div>
                             </div>
                             <div className="service-content">
-                                <h3>Entretien de Jardins</h3>
-                                <p style={{ color: 'var(--text-light)' }}>
+                                <h3 style={{ color: '#166534' }}>Entretien de Jardins</h3>
+                                <p style={{ color: '#475569' }}>
                                     Pour un extérieur impeccable : tonte de gazon, désherbage manuel, entretien de haie, taille d'arbuste, taille d'arbre et élagage. Bénéficiez de l'expertise d'un véritable professionnel pour préserver la santé de votre jardin.
                                 </p>
-                                <Link to="/services" className="service-link">
+                                <Link to="/services" className="service-link" style={{ background: 'var(--primary-color)', color: 'white', padding: '10px 24px', borderRadius: '50px', marginTop: '1rem', display: 'inline-flex', alignItems: 'center', gap: '8px', fontWeight: '600', transition: 'all 0.3s ease' }} onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 20px -5px rgba(84, 180, 53, 0.4)'; e.currentTarget.style.color = 'white'; }} onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.color = 'white'; }}>
                                     Nos forfaits <i className="fas fa-arrow-right"></i>
                                 </Link>
                             </div>
