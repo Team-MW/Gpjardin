@@ -24,7 +24,7 @@ const Services = () => {
         {
             title: 'Aménagement paysager',
             description: 'Structuration de vos espaces avec des matériaux durables. Nous réalisons le dallage de jardin, la création de bassin de jardin, la pose de murets, la création de massif et parterre, ainsi que l\'aménagement d\'allées pour valoriser votre extérieur.',
-            image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services03.jpg',
+            image: '/amenagement_paysager.png',
             icon: 'fa-tree'
         },
         {

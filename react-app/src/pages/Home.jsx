@@ -200,7 +200,7 @@ const Home = () => {
 
                         <div className="service-card">
                             <div className="service-image">
-                                <img src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services03.jpg" alt="Aménagement paysager" />
+                                <img src="/amenagement_paysager.png" alt="Aménagement paysager" />
                                 <div className="service-overlay"></div>
                             </div>
                             <div className="service-content">
