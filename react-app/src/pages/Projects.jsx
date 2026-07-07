@@ -12,7 +12,7 @@ const projectsFaqs = [
 const Projects = () => {
     const [filter, setFilter] = useState('Tous');
 
-    const categories = ['Tous', 'Création', 'Entretien', 'Aménagement', 'Maçonnerie'];
+    const categories = ['Tous', 'Création', 'Entretien', 'Aménagement paysager'];
 
     const projects = [
         {
@@ -54,7 +54,7 @@ const Projects = () => {
             id: 6,
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services03.jpg',
             title: 'Allée Carrossable Pavés',
-            category: 'Maçonnerie',
+            category: 'Aménagement paysager',
             location: 'Colomiers'
         },
     ];

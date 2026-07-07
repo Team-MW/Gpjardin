@@ -513,7 +513,7 @@ img {
 
 /* Services Section */
 .services-section {
-  background-color: var(--white);
+  background-color: var(--light-bg);
   position: relative;
 }
 

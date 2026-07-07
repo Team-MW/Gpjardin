@@ -200,7 +200,7 @@ const Home = () => {
 
                         <div className="service-card">
                             <div className="service-image">
-                                <img src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services03.jpg" alt="Maçonnerie paysagère et terrasse" />
+                                <img src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services03.jpg" alt="Aménagement paysager" />
                                 <div className="service-overlay"></div>
                             </div>
                             <div className="service-content">
@@ -272,6 +272,9 @@ const Home = () => {
                             <span style={{ fontWeight: '700', fontSize: '1.2rem', color: 'var(--secondary-color)' }}>4.9/5</span>
                             <span style={{ color: 'var(--text-light)' }}>sur Google</span>
                         </div>
+                        <a href="https://g.page/r/" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem', display: 'inline-flex', gap: '8px', background: 'white', color: '#15803d', border: '1px solid #15803d', borderRadius: '50px' }}>
+                            <i className="fab fa-google"></i> Laisser un avis
+                        </a>
                     </div>
 
                     <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
@@ -382,17 +385,12 @@ const Home = () => {
                             { name: "Plaisance-du-Touch", id: "plaisance-du-touch" }, { name: "Cugnaux", id: "cugnaux" },
                             { name: "Muret", id: "muret" }, { name: "Portet-sur-Garonne", id: "portet-sur-garonne" },
                             { name: "Pibrac", id: "pibrac" }, { name: "Cornebarrieu", id: "cornebarrieu" },
-                            { name: "Mondonville", id: "mondonville" }, { name: "Seilh", id: "seilh" },
-                            { name: "Aussonne", id: "aussonne" }, { name: "Beauzelle", id: "beauzelle" },
-                            { name: "Fenouillet", id: "fenouillet" }, { name: "Gagnac-sur-Garonne", id: "gagnac-sur-garonne" },
-                            { name: "Lespinasse", id: "lespinasse" }, { name: "Saint-Alban", id: "saint-alban" },
-                            { name: "Fonbeauzard", id: "fonbeauzard" }, { name: "Castelginest", id: "castelginest" },
-                            { name: "Aucamville", id: "aucamville" }, { name: "Launaguet", id: "launaguet" },
+                            { name: "Launaguet", id: "launaguet" },
                             { name: "Léguevin", id: "leguevin" }, { name: "Brax", id: "brax" },
                             { name: "La Salvetat-St-G.", id: "la-salvetat-saint-gilles" }, { name: "Villeneuve-T.", id: "villeneuve-tolosane" },
                             { name: "Frouzins", id: "frouzins" }, { name: "Seysses", id: "seysses" },
                             { name: "Fonsorbes", id: "fonsorbes" }, { name: "Saint-Lys", id: "saint-lys" },
-                            { name: "Grenade", id: "grenade" }, { name: "Merville", id: "merville" }
+                            { name: "Grenade", id: "grenade" }
                         ].map((city, index) => (
                             <Link key={index} to={`/secteur/${city.id}`} className="city-pill">
                                 {city.name}

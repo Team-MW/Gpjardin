@@ -22,10 +22,10 @@ const Services = () => {
             icon: 'fa-cut'
         },
         {
-            title: 'Maçonnerie Paysagère',
-            description: 'Allées, murets et bassins pour structurer votre espace.',
+            title: 'Aménagement paysager',
+            description: 'Création de massif, parterre, allées, murets et bassins pour structurer votre espace.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services03.jpg',
-            icon: 'fa-hard-hat'
+            icon: 'fa-tree'
         },
         {
             title: 'Plantations & Gazon',

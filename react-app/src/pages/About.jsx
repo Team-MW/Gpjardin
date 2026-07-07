@@ -146,7 +146,6 @@ const About = () => {
                         <StatItem end={5} suffix="" label="Années d'expérience" icon="fa-hourglass-half" />
                         <StatItem end={500} suffix="+" label="Jardins Créés" icon="fa-tree" />
                         <StatItem end={100} suffix="%" label="Clients Satisfaits" icon="fa-smile" />
-                        <StatItem end={10} suffix="+" label="Prix de Design" icon="fa-trophy" />
 
                     </div>
                 </div>
