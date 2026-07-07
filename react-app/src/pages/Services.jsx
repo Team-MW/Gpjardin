@@ -11,37 +11,37 @@ const Services = () => {
     const services = [
         {
             title: 'Conception et Design',
-            description: 'Plans 3D, étude de sol et choix des végétaux pour un jardin qui vous ressemble.',
+            description: 'En tant que jardinier paysagiste, notre bureau d\'étude réalise vos plans 3D, étudie les sols et sélectionne minutieusement les végétaux. Nous gérons votre projet de A à Z : création de jardin complet, conception paysagère et aménagement pour un extérieur qui vous ressemble vraiment.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services05.jpg',
             icon: 'fa-pencil-ruler'
         },
         {
             title: 'Entretien de Jardins',
-            description: 'Tonte, taille de haies, désherbage et soins des plantes pour un extérieur impeccable.',
+            description: 'Pour un espace vert toujours impeccable : tonte de gazon, désherbage manuel, entretien de haie, taille d\'arbuste, taille d\'arbre et taille d\'arbre fruitier. Bénéficiez du savoir-faire d\'un véritable professionnel pour préserver la santé de votre jardin.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services02.jpg',
             icon: 'fa-cut'
         },
         {
             title: 'Aménagement paysager',
-            description: 'Création de massif, parterre, allées, murets et bassins pour structurer votre espace.',
+            description: 'Structuration de vos espaces avec des matériaux durables. Nous réalisons le dallage de jardin, la création de bassin de jardin, la pose de murets, la création de massif et parterre, ainsi que l\'aménagement d\'allées pour valoriser votre extérieur.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services03.jpg',
             icon: 'fa-tree'
         },
         {
-            title: 'Plantations & Gazon',
-            description: 'Installation de gazon (en rouleau, en semi et synthétique). Plantation d\'arbres, d\'arbustes et création de massifs floraux.',
+            title: 'Plantations & Élagage',
+            description: 'De la plantation à l\'installation de gazon (en rouleau, semi ou synthétique). En tant que jardinier élagueur, nous assurons aussi le dessouchage, l\'élagage d\'arbres, l\'entretien d\'arbre et le traitement des arbres pour une croissance saine.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services04.jpg',
             icon: 'fa-seedling'
         },
         {
             title: 'Aménagement sur Plan',
-            description: 'Réaménagement complet de votre extérieur sur plan, pour repenser les volumes et créer un jardin sur-mesure.',
+            description: 'Réaménagement complet de votre extérieur sur plan. Nous repensons les volumes pour créer un jardin sur-mesure (zen, méditerranéen, etc.). Chaque projet d\'aménagement bénéficie de l\'expertise technique de notre bureau d\'étude.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services-1.jpg',
             icon: 'fa-drafting-compass'
         },
         {
             title: 'Entretien de Copropriétés',
-            description: 'Contrats réguliers pour la gestion et l\'entretien soigné des espaces verts de votre copropriété ou résidence.',
+            description: 'Contrats réguliers pour la gestion et l\'entretien soigné des espaces verts de votre copropriété ou résidence. Tonte de gazon, taille et nettoyage complet pour offrir un environnement naturel propre et accueillant.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/projects-03.jpg',
             icon: 'fa-building'
         },

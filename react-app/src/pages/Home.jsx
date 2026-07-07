@@ -172,9 +172,9 @@ const Home = () => {
                                 <div className="service-overlay"></div>
                             </div>
                             <div className="service-content">
-                                <h3>Étude & Conception 3D</h3>
+                                <h3>Conception, Design & Création</h3>
                                 <p style={{ color: 'var(--text-light)' }}>
-                                    Notre bureau d'étude réalise des plans détaillés et des modélisations 3D pour vous projeter dans votre futur jardin avant le début des travaux. Choix des végétaux adaptés au climat toulousain, agencement des volumes et gestion de l'espace.
+                                    En tant que jardinier paysagiste, notre bureau d'étude réalise vos plans 3D, étudie les sols et sélectionne les végétaux. Nous gérons votre projet de A à Z : création de jardin, conception paysagère et aménagement d'espaces verts uniques.
                                 </p>
                                 <Link to="/services" className="service-link">
                                     En savoir plus <i className="fas fa-arrow-right"></i>
@@ -188,9 +188,9 @@ const Home = () => {
                                 <div className="service-overlay"></div>
                             </div>
                             <div className="service-content">
-                                <h3>Entretien & Soins</h3>
+                                <h3>Entretien de Jardins</h3>
                                 <p style={{ color: 'var(--text-light)' }}>
-                                    Contrats d'entretien annuels ou ponctuels : tonte de pelouse, taille de haies, élagage d'arbres, désherbage écologique. Profitez d'un jardin impeccable en toute saison sans le moindre effort. Service éligible au crédit d'impôt.
+                                    Pour un extérieur impeccable : tonte de gazon, désherbage manuel, entretien de haie, taille d'arbuste, taille d'arbre et élagage. Bénéficiez de l'expertise d'un véritable professionnel pour préserver la santé de votre jardin.
                                 </p>
                                 <Link to="/services" className="service-link">
                                     Nos forfaits <i className="fas fa-arrow-right"></i>
@@ -206,7 +206,7 @@ const Home = () => {
                             <div className="service-content">
                                 <h3>Aménagement paysager</h3>
                                 <p style={{ color: 'var(--text-light)' }}>
-                                    Création de massif, parterre, allées, murets et bassins pour structurer votre espace.
+                                    Structuration de vos espaces : dallage de jardin, création de bassin de jardin, pose de murets, création de massif et parterre. Nous aménageons des allées et mettons en valeur chaque recoin de votre propriété.
                                 </p>
                                 <Link to="/services" className="service-link">
                                     Voir nos réalisations <i className="fas fa-arrow-right"></i>
@@ -251,64 +251,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            {/* SEO Content Section 1: Eco-responsibility */}
-            <section className="section-padding reveal" style={{ background: 'var(--white)', position: 'relative' }}>
-                <div className="container">
-                    <div className="about-grid-modern" style={{ gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
-                        <div>
-                            <span className="section-tag">Notre Engagement</span>
-                            <h2 className="section-title" style={{ fontSize: '2.5rem' }}>Paysagiste Éco-responsable à Toulouse</h2>
-                            <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-                                Face aux défis climatiques et aux épisodes de sécheresse de notre région, GP Jardin place <strong>l'éco-paysagisme</strong> au cœur de sa démarche. Nous concevons des espaces durables en optimisant la gestion de l'eau grâce à des systèmes de micro-irrigation intelligents et au choix judicieux d'essences végétales méditerranéennes peu gourmandes en eau.
-                            </p>
-                            <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-                                Conscients que votre jardin est un écosystème précieux, nous privilégions le <strong>désherbage manuel</strong>, le paillage organique et les techniques de biocontrôle pour protéger vos plantations de manière naturelle, sans utiliser de produits phytosanitaires agressifs.
-                            </p>
-                        </div>
-                        <div style={{ position: 'relative' }}>
-                            <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '100%', height: '100%', border: '4px solid var(--primary-color)', borderRadius: '16px', zIndex: 0 }}></div>
-                            <img src="https://gpjardin.microdidact.com/wp-content/uploads/2025/03/about-2.jpg" alt="Aménagement de jardin écologique" style={{ width: '100%', borderRadius: '16px', position: 'relative', zIndex: 1, boxShadow: 'var(--shadow-lg)' }} />
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            {/* SEO Content Section 2: Inclusivity & Expertise */}
-            <section className="section-padding reveal" style={{ background: 'var(--light-bg)' }}>
-                <div className="container">
-                    <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem' }}>
-                        <div style={{ background: 'var(--white)', padding: '2.5rem', borderRadius: '16px', boxShadow: 'var(--shadow-sm)' }}>
-                            <div style={{ width: '60px', height: '60px', background: 'var(--accent-color)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary-color)', fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-                                <i className="fas fa-wheelchair"></i>
-                            </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--secondary-color)', fontFamily: 'var(--font-heading)' }}>Le Jardin pour Tous</h3>
-                            <p style={{ color: 'var(--text-light)', lineHeight: '1.7' }}>
-                                Fortement convaincus des <strong>vertus thérapeutiques du jardinage</strong>, nous sommes spécialisés dans l'aménagement de jardins inclusifs et la création de jardinières sur-mesure adaptées aux Personnes à Mobilité Réduite (PMR). Que ce soit pour un domicile privé, une résidence senior ou un EHPAD, nos aménagements ergonomiques permettent à tous de profiter de la nature en toute autonomie.
-                            </p>
-                        </div>
-
-                        <div style={{ background: 'var(--white)', padding: '2.5rem', borderRadius: '16px', boxShadow: 'var(--shadow-sm)' }}>
-                            <div style={{ width: '60px', height: '60px', background: 'var(--accent-color)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary-color)', fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-                                <i className="fas fa-tint"></i>
-                            </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--secondary-color)', fontFamily: 'var(--font-heading)' }}>Expertise & Arrosage</h3>
-                            <p style={{ color: 'var(--text-light)', lineHeight: '1.7' }}>
-                                Savoir écouter ses plantes est un art. Un feuillage jaunissant et un sol sec indiquent un sous-arrosage, tandis qu'un sol détrempé peut asphyxier les racines. Pour un extérieur esthétique et économe, nous vous conseillons la création de <strong>jardins secs</strong> sur lit minéral. Et pour plus de fraîcheur, l'intégration d'un bassin aquatique naturel apportera sérénité et biodiversité.
-                            </p>
-                        </div>
-
-                        <div style={{ background: 'var(--white)', padding: '2.5rem', borderRadius: '16px', boxShadow: 'var(--shadow-sm)' }}>
-                            <div style={{ width: '60px', height: '60px', background: 'var(--accent-color)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary-color)', fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-                                <i className="fas fa-leaf"></i>
-                            </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--secondary-color)', fontFamily: 'var(--font-heading)' }}>Entretien Zéro Contrainte</h3>
-                            <p style={{ color: 'var(--text-light)', lineHeight: '1.7' }}>
-                                Profitez d'un extérieur impeccable toute l'année sans effort. Tonte, taille raisonnée, petit élagage, ramassage des feuilles : nos jardiniers paysagistes s'occupent de tout avec du matériel professionnel performant. Nos prestations régulières de jardinage à domicile vous permettent de bénéficier de <strong>50% de crédit d'impôt</strong> (service à la personne).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
             {/* Google Reviews Section */}
             <section className="section-padding reveal" style={{ background: '#f0fdf4', position: 'relative' }}>
                 {/* Decorative leaf pattern overlay (optional, subtle) */}
