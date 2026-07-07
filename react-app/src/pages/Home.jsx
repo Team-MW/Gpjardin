@@ -184,9 +184,9 @@ const Home = () => {
                                 <div className="service-overlay"></div>
                             </div>
                             <div className="service-content">
-                                <h3>Aménagement & Maçonnerie</h3>
+                                <h3>Aménagement paysager</h3>
                                 <p style={{ color: 'var(--text-light)' }}>
-                                    Création de terrasses (bois, composite, carrelage), allées carrossables, murets en pierre, installation de clôtures et pose de gazon en rouleau. Nous structurons votre extérieur pour le rendre fonctionnel et esthétique.
+                                    Création de massif, parterre, allées, murets et bassins pour structurer votre espace.
                                 </p>
                                 <Link to="/services" className="service-link">
                                     Voir nos réalisations <i className="fas fa-arrow-right"></i>
