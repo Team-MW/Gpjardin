@@ -115,6 +115,63 @@ const Services = () => {
                             </div>
                         ))}
                     </div>
+                    
+                    <div style={{ marginTop: '5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <div className="section-title-wrapper" style={{ marginBottom: '2rem', textAlign: 'center' }}>
+                            <h3 style={{ fontSize: '1.8rem', color: '#14532d' }}>Travaux de Terrassement & Aménagement</h3>
+                            <p style={{ color: 'var(--text-light)', maxWidth: '700px', margin: '0 auto', marginTop: '1rem' }}>
+                                Équipés de nos propres engins (mini-pelle, camions), nous réalisons vos travaux de terrassement, d'enrochement et de préparation de terrain avec précision et efficacité.
+                            </p>
+                        </div>
+                        <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+                            <video 
+                                src="/videos/terrassement1.mp4" 
+                                autoPlay loop muted playsInline controls
+                                style={{ maxWidth: '400px', width: '100%', height: '580px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)' }}
+                            ></video>
+                            <video 
+                                src="/videos/terrassement2.mp4" 
+                                autoPlay loop muted playsInline controls
+                                style={{ maxWidth: '400px', width: '100%', height: '580px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)' }}
+                            ></video>
+                        </div>
+                    </div>
+
+                    {/* Avant / Après Section */}
+                    <div style={{ marginTop: '5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <div className="section-title-wrapper" style={{ marginBottom: '3rem', textAlign: 'center' }}>
+                            <h3 style={{ fontSize: '1.8rem', color: '#14532d' }}>Nos réalisations en images : Avant / Après</h3>
+                            <p style={{ color: 'var(--text-light)', maxWidth: '700px', margin: '0 auto', marginTop: '1rem' }}>
+                                Découvrez la transformation d'espaces extérieurs grâce à notre savoir-faire en aménagement et entretien.
+                            </p>
+                        </div>
+                        
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', width: '100%' }}>
+                            {/* Pair 1 */}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>AVANT</span>
+                                    <img src="/images/avant1.jpeg" alt="Avant aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 25px -5px rgba(34,197,94,0.3)', border: '2px solid #bbf7d0' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'var(--primary-color)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>APRÈS</span>
+                                    <img src="/images/apres1.jpeg" alt="Après aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                            </div>
+
+                            {/* Pair 2 */}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>AVANT</span>
+                                    <img src="/images/avant2.jpeg" alt="Avant aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 25px -5px rgba(34,197,94,0.3)', border: '2px solid #bbf7d0' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'var(--primary-color)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>APRÈS</span>
+                                    <img src="/images/apres2.jpeg" alt="Après aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
