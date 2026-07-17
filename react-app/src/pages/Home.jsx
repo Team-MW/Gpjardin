@@ -5,7 +5,7 @@ import FAQ from '../components/FAQ';
 
 const homeFaqs = [
     { question: "Quels types d'aménagements paysagers réalisez-vous à Toulouse ?", answer: "Nous couvrons l'ensemble des besoins en aménagement extérieur : création de jardins sur-mesure (zen, méditerranéen, moderne), pose de terrasses en bois exotique, plantation de massifs, engazonnement, et petite maçonnerie paysagère." },
-    { question: "Proposez-vous des contrats d'entretien pour les jardins existants ?", answer: "Oui, nous proposons des contrats annuels ou des interventions ponctuelles pour la tonte, la taille des haies, l'élagage et le nettoyage de vos espaces verts, avec la possibilité de bénéficier d'avantages fiscaux (service à la personne)." },
+    { question: "Proposez-vous des contrats d'entretien pour les jardins existants ?", answer: "Oui, nous proposons des contrats annuels ou des interventions ponctuelles pour la tonte, la taille des haies, l'élagage et le nettoyage de vos espaces verts, avec la possibilité de bénéficier d'avantages fiscaux (crédit d'impôt de 50%)." },
     { question: "Combien coûte la création d'un jardin ?", answer: "Le budget varie selon la surface, les matériaux choisis et la complexité des aménagements. Nous proposons toujours une première visite suivie d'un devis transparent et détaillé, sans surprise." },
     { question: "Faites-vous des visualisations 3D de mon futur jardin ?", answer: "Absolument. Notre bureau d'étude peut concevoir des modélisations 3D pour vous permettre de vous projeter visuellement dans votre futur espace avant le début des travaux." }
 ];
@@ -101,7 +101,7 @@ const Home = () => {
                     <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '4rem', justifyContent: 'center' }}>
                         <div style={{ flex: '1 1 500px', maxWidth: '650px' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1.5rem' }}>
-                                <img src="/si.jpg" alt="Services à la personne" style={{ height: '70px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }} />
+                                <img src="/logo-impots-gouv.jpg" alt="Crédit d'impôt" style={{ height: '70px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }} />
                                 <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '10px 15px', display: 'flex', alignItems: 'center', gap: '10px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
                                     <i className="fas fa-bolt" style={{ color: '#eab308', fontSize: '1.5rem' }}></i>
                                     <div>
@@ -114,7 +114,7 @@ const Home = () => {
                                 Ne payez que la moitié de votre facture !
                             </h2>
                             <p style={{ fontSize: '1.2rem', color: '#166534', marginBottom: '1.5rem', fontWeight: '500', lineHeight: '1.5' }}>
-                                Grâce à notre agrément "Service à la personne", bénéficiez du crédit d'impôt de 50% avec l'Avance Immédiate de l'Urssaf pour l'entretien de votre jardin.
+                                Bénéficiez du crédit d'impôt de 50% avec l'Avance Immédiate de l'Urssaf pour l'entretien de votre jardin.
                             </p>
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem', color: '#166534', fontSize: '1.05rem' }}>
                                 <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
@@ -136,23 +136,7 @@ const Home = () => {
                                 </Link>
                             </div>
                         </div>
-                        
-                        <div style={{ flex: '0 1 320px', background: 'white', padding: '2.5rem 2rem', borderRadius: '20px', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)', textAlign: 'center', border: '3px solid #22c55e', position: 'relative' }}>
-                            <div style={{ position: 'absolute', top: '-20px', left: '50%', transform: 'translateX(-50%)', background: '#22c55e', color: 'white', padding: '5px 20px', borderRadius: '30px', fontWeight: 'bold', fontSize: '0.9rem', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', whiteSpace: 'nowrap' }}>
-                                EXEMPLE DE FACTURE
-                            </div>
-                            <div style={{ fontSize: '1.2rem', color: '#64748b', marginBottom: '0.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                <span>Total prestation :</span>
-                                <span style={{ textDecoration: 'line-through' }}>200€</span>
-                            </div>
-                            <div style={{ fontSize: '1.1rem', color: '#22c55e', marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontWeight: '600' }}>
-                                <span>Avance immédiate :</span>
-                                <span>-100€</span>
-                            </div>
-                            <div style={{ borderTop: '2px dashed #e2e8f0', margin: '1.5rem 0' }}></div>
-                            <div style={{ fontSize: '1rem', color: '#475569', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>VOUS NE PAYEZ QUE</div>
-                            <div style={{ fontSize: '3.5rem', fontWeight: '800', color: '#166534', margin: '0.5rem 0', lineHeight: '1' }}>100€</div>
-                        </div>
+
                     </div>
                 </div>
             </section>
