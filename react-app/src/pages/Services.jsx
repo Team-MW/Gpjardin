@@ -4,7 +4,6 @@ import FAQ from '../components/FAQ';
 
 const servicesFaqs = [
     { question: "Gérez-vous la pose de systèmes d'arrosage automatique ?", answer: "Oui, nous installons des systèmes d'arrosage intégrés et connectés, programmables selon les besoins de chaque zone végétale pour optimiser votre consommation d'eau." },
-    { question: "Réalisez-vous la pose de clôtures et de portails ?", answer: "Tout à fait. Nous posons tous types de clôtures (bois, rigide, végétalisée) pour délimiter, sécuriser et préserver l'intimité de votre propriété." },
     { question: "Est-ce que vos services d'entretien sont déductibles des impôts ?", answer: "Oui, pour les particuliers, nos prestations de petit jardinage et d'entretien courant entrent dans le cadre des services à la personne, vous permettant de bénéficier d'un crédit d'impôt de 50%." },
     { question: "Travaillez-vous aussi pour des professionnels ou des copropriétés ?", answer: "Oui, nous avons des partenariats avec plusieurs syndics et entreprises pour l'aménagement et l'entretien régulier de leurs espaces verts professionnels." }
 ];
@@ -37,7 +36,7 @@ const Services = () => {
 
     const services = [
         {
-            title: 'Conception et Design',
+            title: 'Création et conception de jardin',
             description: 'En tant que jardinier paysagiste, notre bureau d\'étude réalise vos plans 3D, étudie les sols et sélectionne minutieusement les végétaux. Nous gérons votre projet de A à Z : création de jardin complet, conception paysagère et aménagement pour un extérieur qui vous ressemble vraiment.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services05.jpg',
             icon: 'fa-pencil-ruler'
@@ -50,18 +49,18 @@ const Services = () => {
         },
         {
             title: 'Aménagement paysager',
-            description: 'Structuration de vos espaces avec des matériaux durables. Nous réalisons le dallage de jardin, la création de bassin de jardin, la pose de murets, la création de massif et parterre, ainsi que l\'aménagement d\'allées pour valoriser votre extérieur.',
+            description: 'Structuration de vos espaces avec des matériaux durables. Nous réalisons le dallage de jardin, la création de bassin de jardin, la création de massif et parterre, ainsi que l\'aménagement d\'allées pour valoriser votre extérieur.',
             image: '/amenagement_paysager.png',
             icon: 'fa-tree'
         },
         {
-            title: 'Plantations & Élagage',
+            title: 'Plantation d\'arbre et d\'arbuste',
             description: 'De la plantation à l\'installation de gazon (en rouleau, semi ou synthétique). En tant que jardinier élagueur, nous assurons aussi le dessouchage, l\'élagage d\'arbres, l\'entretien d\'arbre et le traitement des arbres pour une croissance saine.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services04.jpg',
             icon: 'fa-seedling'
         },
         {
-            title: 'Aménagement sur Plan',
+            title: 'Élagage',
             description: 'Réaménagement complet de votre extérieur sur plan. Nous repensons les volumes pour créer un jardin sur-mesure (zen, méditerranéen, etc.). Chaque projet d\'aménagement bénéficie de l\'expertise technique de notre bureau d\'étude.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services-1.jpg',
             icon: 'fa-drafting-compass'

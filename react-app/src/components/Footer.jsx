@@ -114,7 +114,7 @@ const Footer = () => {
                                 </li>
                                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                                     <i className="fas fa-envelope"></i>
-                                    <a href="mailto:Gp.jardin31@gmail.com">Gp.jardin31@gmail.com</a>
+                                    <a href="mailto:gp.jardin31@gmail.com">gp.jardin31@gmail.com</a>
                                 </div>
                             </ul>
 

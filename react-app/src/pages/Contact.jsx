@@ -102,7 +102,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <span style={{ display: 'block', fontSize: '0.9rem', color: 'var(--text-light)', fontWeight: '600', textTransform: 'uppercase', marginBottom: '0.2rem' }}>Email</span>
-                                        <a href="mailto:Gp.jardin31@gmail.com" style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--secondary-color)' }}>Gp.jardin31@gmail.com</a>
+                                        <a href="mailto:gp.jardin31@gmail.com" style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--secondary-color)' }}>gp.jardin31@gmail.com</a>
                                     </div>
                                 </div>
 

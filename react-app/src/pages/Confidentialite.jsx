@@ -50,7 +50,7 @@ const Confidentialite = () => {
 
                         <h2 style={{ marginBottom: '1.5rem', color: 'var(--secondary-color)' }}>4. Vos droits (RGPD)</h2>
                         <p style={{ marginBottom: '2rem', lineHeight: '1.8', color: 'var(--text-light)' }}>
-                            Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données. Pour exercer ces droits, vous pouvez nous contacter à l'adresse suivante : <strong>Gp.jardin31@gmail.com</strong>.
+                            Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données. Pour exercer ces droits, vous pouvez nous contacter à l'adresse suivante : <strong>gp.jardin31@gmail.com</strong>.
                         </p>
 
                         <h2 style={{ marginBottom: '1.5rem', color: 'var(--secondary-color)' }}>5. Sécurité</h2>

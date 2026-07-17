@@ -27,7 +27,7 @@ const MentionsLegales = () => {
                             <strong>Inscription au RNE :</strong> INSCRIT<br />
                             <strong>Siège social :</strong> Toulouse, France<br />
                             <strong>Téléphone :</strong> 06 66 70 30 45<br />
-                            <strong>Email :</strong> Gp.jardin31@gmail.com<br />
+                            <strong>Email :</strong> gp.jardin31@gmail.com<br />
                             <strong>Responsable de la publication :</strong> GP JARDIN
                         </p>
 

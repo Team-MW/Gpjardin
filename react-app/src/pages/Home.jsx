@@ -93,11 +93,69 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-
-
-
-
+            {/* Avance Immédiate 50% Section */}
+            <section className="section-padding reveal" style={{ background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ position: 'absolute', top: '-50px', right: '-50px', width: '200px', height: '200px', background: 'rgba(34, 197, 94, 0.1)', borderRadius: '50%', zIndex: 0 }}></div>
+                <div style={{ position: 'absolute', bottom: '-50px', left: '-50px', width: '150px', height: '150px', background: 'rgba(34, 197, 94, 0.1)', borderRadius: '50%', zIndex: 0 }}></div>
+                <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '4rem', justifyContent: 'center' }}>
+                        <div style={{ flex: '1 1 500px', maxWidth: '650px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '1.5rem' }}>
+                                <img src="/si.jpg" alt="Services à la personne" style={{ height: '70px', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }} />
+                                <div style={{ background: 'white', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '10px 15px', display: 'flex', alignItems: 'center', gap: '10px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
+                                    <i className="fas fa-bolt" style={{ color: '#eab308', fontSize: '1.5rem' }}></i>
+                                    <div>
+                                        <div style={{ fontWeight: '800', color: '#1e293b', fontSize: '1.1rem', lineHeight: '1' }}>AVANCE</div>
+                                        <div style={{ fontWeight: '800', color: '#166534', fontSize: '1.1rem', lineHeight: '1' }}>IMMÉDIATE</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 style={{ fontSize: '2.4rem', color: '#14532d', marginBottom: '1rem', lineHeight: '1.2' }}>
+                                Ne payez que la moitié de votre facture !
+                            </h2>
+                            <p style={{ fontSize: '1.2rem', color: '#166534', marginBottom: '1.5rem', fontWeight: '500', lineHeight: '1.5' }}>
+                                Grâce à notre agrément "Service à la personne", bénéficiez du crédit d'impôt de 50% avec l'Avance Immédiate de l'Urssaf pour l'entretien de votre jardin.
+                            </p>
+                            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem', color: '#166534', fontSize: '1.05rem' }}>
+                                <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                                    <i className="fas fa-check-circle" style={{ marginTop: '4px', color: '#22c55e', fontSize: '1.2rem' }}></i>
+                                    <span><strong>50% déduit instantanément :</strong> vous ne réglez que le reste à charge.</span>
+                                </li>
+                                <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                                    <i className="fas fa-check-circle" style={{ marginTop: '4px', color: '#22c55e', fontSize: '1.2rem' }}></i>
+                                    <span><strong>Pour vos travaux d'entretien :</strong> tonte de pelouse, taille de haies, débroussaillage, ramassage de feuilles...</span>
+                                </li>
+                                <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                                    <i className="fas fa-check-circle" style={{ marginTop: '4px', color: '#22c55e', fontSize: '1.2rem' }}></i>
+                                    <span><strong>Zéro paperasse :</strong> service gratuit et dématérialisé, on s'occupe de tout !</span>
+                                </li>
+                            </ul>
+                            <div style={{ marginTop: '2rem' }}>
+                                <Link to="/contact" className="btn btn-primary" style={{ background: '#166534', border: 'none', padding: '0.8rem 1.5rem', fontSize: '1.1rem' }}>
+                                    Demander un devis <i className="fas fa-arrow-right" style={{ marginLeft: '8px' }}></i>
+                                </Link>
+                            </div>
+                        </div>
+                        
+                        <div style={{ flex: '0 1 320px', background: 'white', padding: '2.5rem 2rem', borderRadius: '20px', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)', textAlign: 'center', border: '3px solid #22c55e', position: 'relative' }}>
+                            <div style={{ position: 'absolute', top: '-20px', left: '50%', transform: 'translateX(-50%)', background: '#22c55e', color: 'white', padding: '5px 20px', borderRadius: '30px', fontWeight: 'bold', fontSize: '0.9rem', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', whiteSpace: 'nowrap' }}>
+                                EXEMPLE DE FACTURE
+                            </div>
+                            <div style={{ fontSize: '1.2rem', color: '#64748b', marginBottom: '0.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                <span>Total prestation :</span>
+                                <span style={{ textDecoration: 'line-through' }}>200€</span>
+                            </div>
+                            <div style={{ fontSize: '1.1rem', color: '#22c55e', marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontWeight: '600' }}>
+                                <span>Avance immédiate :</span>
+                                <span>-100€</span>
+                            </div>
+                            <div style={{ borderTop: '2px dashed #e2e8f0', margin: '1.5rem 0' }}></div>
+                            <div style={{ fontSize: '1rem', color: '#475569', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>VOUS NE PAYEZ QUE</div>
+                            <div style={{ fontSize: '3.5rem', fontWeight: '800', color: '#166534', margin: '0.5rem 0', lineHeight: '1' }}>100€</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             {/* Instagram Section */}
             <section className="section-padding reveal" style={{ background: 'white' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -297,8 +355,8 @@ const Home = () => {
                         </div>
 
                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-                            <img src="/si.jpg" alt="Service à la personne" style={{ maxHeight: '80px', filter: 'grayscale(100%)', opacity: 0.7, transition: 'all 0.3s', objectFit: 'contain' }} onMouseOver={(e) => { e.currentTarget.style.filter = 'none'; e.currentTarget.style.opacity = '1'; }} onMouseOut={(e) => { e.currentTarget.style.filter = 'grayscale(100%)'; e.currentTarget.style.opacity = '0.7'; }} />
-                            <span style={{ fontWeight: '600', color: '#64748b' }}>Service à la personne</span>
+                            <img src="/fbi-immobilier.png" alt="FBI Immobilier 31" style={{ maxHeight: '80px', filter: 'grayscale(100%)', opacity: 0.7, transition: 'all 0.3s', objectFit: 'contain' }} onMouseOver={(e) => { e.currentTarget.style.filter = 'none'; e.currentTarget.style.opacity = '1'; }} onMouseOut={(e) => { e.currentTarget.style.filter = 'grayscale(100%)'; e.currentTarget.style.opacity = '0.7'; }} />
+                            <span style={{ fontWeight: '600', color: '#64748b' }}>FBI Immobilier 31</span>
                         </div>
 
                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
