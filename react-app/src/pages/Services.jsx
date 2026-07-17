@@ -97,10 +97,6 @@ const Services = () => {
                     <div className="services-grid">
                         {services.map((service, index) => (
                             <div key={index} className="service-card">
-                                <div className="service-image">
-                                    <img src={service.image} alt={service.title} />
-                                    <div className="service-overlay"></div>
-                                </div>
                                 <div className="service-content">
                                     <div className="feature-icon" style={{ width: '50px', height: '50px', fontSize: '1.2rem', marginBottom: '1rem' }}>
                                         <i className={`fas ${service.icon}`}></i>
@@ -167,6 +163,54 @@ const Services = () => {
                                 <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 25px -5px rgba(34,197,94,0.3)', border: '2px solid #bbf7d0' }}>
                                     <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'var(--primary-color)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>APRÈS</span>
                                     <img src="/images/apres2.jpeg" alt="Après aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                            </div>
+
+                            {/* Pair 3 */}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>AVANT</span>
+                                    <img src="/images/avant_copie.jpeg" alt="Avant aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 25px -5px rgba(34,197,94,0.3)', border: '2px solid #bbf7d0' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'var(--primary-color)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>APRÈS</span>
+                                    <img src="/images/apres_copie.jpeg" alt="Après aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                            </div>
+
+                            {/* Pair 4 */}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>AVANT</span>
+                                    <img src="/images/avant5.jpeg" alt="Avant aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 25px -5px rgba(34,197,94,0.3)', border: '2px solid #bbf7d0' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'var(--primary-color)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>APRÈS</span>
+                                    <img src="/images/apres5.jpeg" alt="Après aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                            </div>
+
+                            {/* Pair 5 */}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>AVANT</span>
+                                    <img src="/images/avant6.jpeg" alt="Avant aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 25px -5px rgba(34,197,94,0.3)', border: '2px solid #bbf7d0' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'var(--primary-color)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>APRÈS</span>
+                                    <img src="/images/apres6.jpeg" alt="Après aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                            </div>
+
+                            {/* Pair 6 */}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'rgba(0,0,0,0.7)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>AVANT</span>
+                                    <img src="/images/avant7.jpeg" alt="Avant aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+                                </div>
+                                <div style={{ position: 'relative', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 25px -5px rgba(34,197,94,0.3)', border: '2px solid #bbf7d0' }}>
+                                    <span style={{ position: 'absolute', top: '15px', left: '15px', background: 'var(--primary-color)', color: 'white', padding: '5px 15px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 'bold', zIndex: 10 }}>APRÈS</span>
+                                    <img src="/images/apres7.jpeg" alt="Après aménagement" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
                                 </div>
                             </div>
                         </div>
