@@ -61,9 +61,9 @@ const Services = () => {
         },
         {
             title: 'Élagage',
-            description: 'Réaménagement complet de votre extérieur sur plan. Nous repensons les volumes pour créer un jardin sur-mesure (zen, méditerranéen, etc.). Chaque projet d\'aménagement bénéficie de l\'expertise technique de notre bureau d\'étude.',
+            description: 'Intervention professionnelle pour la taille, l\'élagage et l\'abattage de vos arbres. Nous assurons la sécurité de vos espaces extérieurs et la santé de vos végétaux avec un matériel et un savoir-faire adaptés.',
             image: 'https://gpjardin.microdidact.com/wp-content/uploads/2025/03/services-1.jpg',
-            icon: 'fa-drafting-compass'
+            icon: 'fa-tree'
         },
         {
             title: 'Entretien de Copropriétés',

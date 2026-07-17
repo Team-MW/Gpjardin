@@ -72,7 +72,7 @@ const Home = () => {
                         <span className="text-gradient">Notre Chef-d'œuvre</span>
                     </h1>
                     <p className="hero-description">
-                        Transformez votre espace extérieur en un véritable havre de paix grâce à notre expertise en aménagement paysager et entretien de jardin.
+                        Artisan paysagiste de la région toulousaine. Transformez votre espace extérieur en un véritable havre de paix grâce à notre expertise en aménagement paysager et entretien de jardin.
                     </p>
                     <div className="hero-buttons">
                         <Link to="/contact#devis" className="btn btn-primary">
