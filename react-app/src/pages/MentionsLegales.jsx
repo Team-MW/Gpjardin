@@ -17,18 +17,18 @@ const MentionsLegales = () => {
                     <div className="legal-content">
                         <h2 style={{ marginBottom: '1.5rem', color: 'var(--secondary-color)' }}>1. Éditeur du site</h2>
                         <p style={{ marginBottom: '2rem', lineHeight: '1.8', color: 'var(--text-light)' }}>
-                            Le site internet <strong>gpjardin.com</strong> est édité par l'entreprise <strong>GP JARDIN</strong>.<br />
-                            <strong>Forme juridique :</strong> Entrepreneur individuel<br />
-                            <strong>Micro-entreprise :</strong> Oui<br />
-                            <strong>SIREN :</strong> 940 392 335<br />
-                            <strong>SIRET (siège) :</strong> 940 392 335 00011<br />
+                            Le site internet <strong>gpjardin.com</strong> est édité par l'entreprise <strong>SARL G.P Jardin</strong>.<br />
+                            <strong>Forme juridique :</strong> SARL<br />
+                            <strong>Capital social :</strong> 1000€<br />
+                            <strong>SIREN :</strong> 106 786 379<br />
+                            <strong>SIRET (siège) :</strong> 106 786 379 00011<br />
                             <strong>Numéro de TVA :</strong> FR14940392335<br />
                             <strong>Inscription au RCS :</strong> Non inscrit<br />
                             <strong>Inscription au RNE :</strong> INSCRIT<br />
                             <strong>Siège social :</strong> Toulouse, France<br />
                             <strong>Téléphone :</strong> 06 66 70 30 45<br />
                             <strong>Email :</strong> gp.jardin31@gmail.com<br />
-                            <strong>Responsable de la publication :</strong> GP JARDIN
+                            <strong>Responsable de la publication :</strong> SARL G.P Jardin
                         </p>
 
                         <h2 style={{ marginBottom: '1.5rem', color: 'var(--secondary-color)' }}>2. Hébergement</h2>

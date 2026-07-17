@@ -136,6 +136,9 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <div className="copyright">
                         <p>&copy; {new Date().getFullYear()} GP JARDIN. Tous droits réservés.</p>
+                        <p style={{ fontSize: '0.85rem', marginTop: '5px', color: '#94a3b8' }}>
+                            SARL G.P Jardin au capital de 1000€, numéro siret 106 786 379 00011
+                        </p>
                     </div>
                     <div className="footer-legal">
                         <Link to="/mentions-legales">Mentions Légales</Link>
