@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import FAQ from '../components/FAQ';
 
@@ -10,6 +10,15 @@ const homeFaqs = [
     { question: "Faites-vous des visualisations 3D de mon futur jardin ?", answer: "Absolument. Notre bureau d'étude peut concevoir des modélisations 3D pour vous permettre de vous projeter visuellement dans votre futur espace avant le début des travaux." }
 ];
 const Home = () => {
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = '/acceuil.jpg';
+        img.onload = () => setIsImageLoaded(true);
+        img.onerror = () => setIsImageLoaded(true);
+    }, []);
+
     useEffect(() => {
         // Scroll reveal animation
         const revealOptions = {
@@ -35,6 +44,11 @@ const Home = () => {
 
     return (
         <div className="home-page">
+            {!isImageLoaded && (
+                <div className="loader-overlay">
+                    <div className="loader-spinner"></div>
+                </div>
+            )}
             <Helmet>
                 <title>Paysagiste Toulouse - Conception & Entretien Jardin | GP Jardin</title>
                 <meta name="description" content="GP Jardin, votre paysagiste expert à Toulouse et Haute-Garonne. Création de jardins sur mesure, entretien espaces verts, élagage et aménagement extérieur. Devis gratuit." />
