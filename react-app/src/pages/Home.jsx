@@ -100,12 +100,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* Scroll Indicator */}
-                <div className="scroll-indicator">
-                    <div style={{ width: '30px', height: '50px', border: '2px solid rgba(255,255,255,0.5)', borderRadius: '25px', position: 'relative' }}>
-                        <div style={{ width: '4px', height: '8px', background: '#fff', borderRadius: '2px', position: 'absolute', top: '10px', left: '50%', transform: 'translateX(-50%)', animation: 'scrollWheel 2s infinite' }}></div>
-                    </div>
-                </div>
+
             </section>
             {/* Avance Immédiate 50% Section */}
             <section className="section-padding reveal" style={{ background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)', position: 'relative', overflow: 'hidden' }}>
