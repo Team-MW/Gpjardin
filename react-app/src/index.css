@@ -957,11 +957,8 @@ img {
     transform: none;
   }
 
-  .mobile-menu-toggle.open {
-    color: var(--secondary-color);
-  }
-
-  .site-header.scrolled .mobile-menu-toggle {
+  .mobile-menu-toggle.open,
+  .site-header.scrolled .mobile-menu-toggle.open {
     color: var(--secondary-color);
   }
 
